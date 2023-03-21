@@ -12,7 +12,7 @@
 
 **Assessment**: In total, the group project (deliverable and presentation) is worth 40% of your final grade
 
-**Team Members**: FILL IN MEMBERS HERE
+**Team Members**: Charelle Constantino, Hairuo Chen, Tarek Sallam, Alanna You 
 
 ## Introduction
 
