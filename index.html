@@ -18,22 +18,21 @@
 
     <!-- Set the Favicon  -->
     <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+
+    <!-- Source for the Color Picker-->
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
   </head>
-  <body>
-    <!--
 
-      ADD YOUR GROUP PROJECT CODE
-
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
-
-    -->
-
+  <!-- INIT FUNCTION EXECUTED ON BODY LOAD-->
+  <body onload = "init()">
     <main>
       <div class="container">
         <div class="app">
           <div class="left">
             <button class="switch-button">Switch</button>
-            <button class="colour-button">Colour</button>
+
+            <!-- Displays Edit Dialog-->
+            <button class="colour-button" onclick = "displayEdit()">Colour</button>
             <button class="share-button">Share</button>
           </div>
           <div class="middle">
@@ -43,8 +42,10 @@
             <button></button>
             <div class="keyboard">
               <img src="" alt="">
+
+              <!-- Container for keyboard overlay-->
               <figure id="svg-container">
-                
+                <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
               </figure>
               <p>keyboard</p>
             </div>
@@ -57,6 +58,24 @@
           </div>
         </div>
       </div>
+
+      <!-- Edit Dialog Box-->
+      <div id = "edit">
+
+        <!-- color picker container-->
+        <div id="picker"></div>
+  
+        <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
+        <div id = "editButtons">
+          <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
+          <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
+          <button type = "button" onclick = "resetColor()">RESET</button>
+          <button type = "button" onclick = "saveColor()">SAVE</button>
+          <button type = "button" onclick = "displayEdit()">CLOSE</button>
+        </div>
+  
+      </div>
+
     </main>
     <!--<footer>
       <p>wix</p>
