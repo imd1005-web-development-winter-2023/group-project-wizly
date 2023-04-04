@@ -6,6 +6,15 @@ const dataFile = "JSON/data.JSON";
 // parent container
 const figure = document.getElementById("svg-container");
 
+// used for button popup
+const btPopupSwitch = document.querySelector(".switch-button");
+const btPopupColour = document.querySelector(".colour-button");
+const btPopupShare = document.querySelector(".share-button");
+const popupSwitchWrapper = document.querySelector(".popup-switchContainer");
+const popupColourWrapper = document.querySelector(".popup-colourContainer");
+const popupShareWrapper = document.querySelector(".popup-shareContainer");
+const iconClose = document.querySelector(".ri-close-line");
+
 // classes used
 let shadowClass = "shadowKeys";
 let normalKeyClass = "normalKeys";
@@ -196,3 +205,14 @@ function changeImage() {
         document.getElementById("clearbutton").src = "images/clear_button.png";
     }
 }
+
+btPopupSwitch.addEventListener("click", ()=>{
+    popupSwitchWrapper.classList.add("active-popup");
+  });
+  
+  iconClose.addEventListener("click", ()=>{
+    //console.log("hello");
+    popupSwitchWrapper.classList.remove("active-popup");
+  });
+  
+  
