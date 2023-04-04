@@ -14,6 +14,7 @@ const popupSwitchWrapper = document.querySelector(".popup-switchContainer");
 const popupColourWrapper = document.querySelector(".popup-colourContainer");
 const popupShareWrapper = document.querySelector(".popup-shareContainer");
 const iconClose = document.querySelector(".ri-close-line");
+const iconClose2 = document.querySelector(".icon-close2");
 
 // classes used
 let shadowClass = "shadowKeys";
@@ -215,4 +216,11 @@ btPopupSwitch.addEventListener("click", ()=>{
     popupSwitchWrapper.classList.remove("active-popup");
   });
   
-  
+btPopupColour.addEventListener("click", ()=>{
+    popupColourWrapper.classList.add("active-popup");
+ });
+
+ iconClose2.addEventListener("click", ()=>{
+    //console.log("hello");
+    popupColourWrapper.classList.remove("active-popup");
+ });
