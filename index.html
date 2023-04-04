@@ -88,7 +88,7 @@
             <i class="ri-close-line"></i>
           </span>
           <h2>Colour</h2>
-          <!--<div id = "edit">-->
+          <div id = "edit" class="edit">
             <!-- color picker container-->
             <div id="picker" class="picker"></div>
             <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
@@ -99,9 +99,21 @@
                 <button type = "button" onclick = "saveColor()">SAVE</button>
                 <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
               </div>
+              <div class="keyboard">
+                <img class="keyboard-layout" height="200vh" src="images/keyboard.png" alt="keyboard">
+                <!-- Container for keyboard overlay-->
+                <figure id="svg-container" class="keyboard-color">
+                  <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
+                </figure>
+              </div>
       
-          <!--</div>-->
+          </div>
         </div>
+
+
+
+
+        
       </div>
       <!--<div class="popup-shareContainer">
         <div class="content">
