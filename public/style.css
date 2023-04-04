@@ -55,7 +55,7 @@
 */
 /*Feel free to change body, container and .app, this is just a quick template of sorts :)*/
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Press Start 2P', cursive;
   color: var(--body-default-colour);
   background-color: var(--body-background-colour);
   outline:none;
@@ -90,9 +90,8 @@ body {
       display: flex;
       gap: 2rem;
       flex-direction: column;
-      
     }
-    .switch-button, .colour-button, .share-button{
+    .switch-button, .colour-button, .share-button, .music-button{
       font-size: 25px;
       color: #FFBE00;
       height: auto;
@@ -116,11 +115,11 @@ body {
       user-select: none;
     }
     
-    .switch-button:active, .colour-button:active, .share-button:active {
+    .switch-button:active, .colour-button:active, .share-button:active .music-button:active {
       top: 2px;
     }
     
-    .switch-button, .colour-button, .share-button {
+    .switch-button, .colour-button, .share-button, .music-button {
       position: relative;
       display: block;
       margin: 10px;
@@ -129,7 +128,7 @@ body {
       font-size: 25px;
     }
     
-    .switch-button::before, .colour-button::before, .share-button::before {
+    .switch-button::before, .colour-button::before, .share-button::before, .music-button::before {
       content: "";
       display: block;
       position: absolute;
@@ -141,7 +140,7 @@ body {
       z-index: -1;
     }
     
-    .switch-button::after, .colour-button::after, .share-button::after{
+    .switch-button::after, .colour-button::after, .share-button::after, .music-button::after{
       content: "";
       display: block;
       position: absolute;
@@ -153,7 +152,7 @@ body {
       z-index: -1;
     }
     
-    .switch-button , .colour-button, .share-button{
+    .switch-button , .colour-button, .share-button, .music-button{
       padding: 10px 10px;
       position: relative;
       background: #1C819E;
@@ -163,10 +162,12 @@ body {
     
     .middle{
       flex-grow: 1;
-      background-color: #a8dadc;
+      /*background-color: #a8dadc;*/
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 1rem;
+      height: 100%;
     }
 
     .screen-output {
@@ -195,7 +196,7 @@ body {
     }
 
     .monitor {
-      max-height: 600px;
+      max-height: 50vh;
       width: auto;
     }
 
@@ -211,25 +212,97 @@ body {
       left: 10px;
     }
     
-    .mouse {
-      height: 400px;
-      width: auto;
-    }
+    
+
+    /*.music {
+      border: 1px solid blue;
+    }*/
 
     .right {
       display: flex;
-     flex-direction: column;
-      align-content: space-between;
-      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
     }
 
     .mouse {
+      height: 40%;
+      width: auto;
+    }
+    /*.mouse {
       display: flex;
       justify-self: end;
       align-self: end;
+    }*/
 
+  .popup-switchContainer{
+    display: flex;
+
+    
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+  }
+
+    .popup-switchContainer.active-popup{
+      transform: scale(1);
     }
 
+      .content{
+        text-align: center;
+        width: 40vw;
+        height: 50vh;
+        margin: 20px 0px;
+        /*margin: 85px auto 0;*/
+        padding: 15px 75px;
+        border-radius: 20px;
+        background-color: #003049;
+        position: relative;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        overflow: scroll;    
+      }
+      .content .ri-close-line{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45px;
+        height: 45px;
+        background: #4E6E81;
+        font-size: 2rem;
+        color: #E4DCCF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 20px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .ri-close-line:hover {
+        background-color: #a8dadc;
+        color: #003049;
+      }
+        main h2 {
+          margin-bottom: 2rem;
+          margin-top: 1.2rem;
+          font-size: 2vw;
+          font-family: 'Press Start 2P', cursive;
+          color: #FFBE00;                                      
+          text-transform: uppercase;
+          letter-spacing: 12px;
+          box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 1);
+          
+        }
+        .buttons{
+          display: flex;
+          flex-direction: row;
+          gap: 2.5rem;
+        }
+    
 /*
 Screen reader text utility class
 */
