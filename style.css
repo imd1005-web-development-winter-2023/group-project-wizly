@@ -1,6 +1,7 @@
-/* container for the SVG (Keyboard Overlay) */
-#svg-container {
-  width: 50%;
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 /* defines the styling for the shadow overlay keys (when keys are pressed down) */
@@ -13,7 +14,7 @@
 .selectedKeys {
   stroke: orange;
   stroke-width: 2px;
-  opacity: 50%;
+  opacity: 70%;
 }
 
 /* defines the styling for all keys when in edit mode */
@@ -25,8 +26,7 @@
 
 /* defines the styling for all keys when not in edit mode */
 .normalKeys {
-  opacity: 100%;
-  stroke: black;
+  opacity: 50%;
   stroke-width: 1px;
 }
 
@@ -209,11 +209,11 @@ body {
 
     .keyboard-color {
       position: absolute;
-      top: 10px;
-      left: 10px;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
     }
-    
-    
 
     /*.music {
       border: 1px solid blue;
