@@ -187,3 +187,12 @@ colorPicker.on('color:change', function(color) {
         changeColor(selectedKeys[i].id, color.hexString);
     }
 });
+
+//
+function changeImage() {
+    if (document.getElementById("clearbutton").src == "images/clear_button.png"){
+        document.getElementById("clearbutton").src = "images/clear_button_clicked.png";
+    } else {
+        document.getElementById("clearbutton").src = "images/clear_button.png";
+    }
+}
