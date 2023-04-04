@@ -82,16 +82,28 @@
         </div>
       </div>
 
-      <!--<div class="popup-colourContainer">
-        <div class="content">
-          <span class="icon-close">
+      <div class="popup-colourContainer">
+        <div class="content2">
+          <span class="icon-close2">
             <i class="ri-close-line"></i>
           </span>
           <h2>Colour</h2>
+          <!--<div id = "edit">-->
+            <!-- color picker container-->
+            <div id="picker" class="picker"></div>
+            <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
+              <div id = "editButtons" class="editButtons">
+                <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
+                <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
+                <button type = "button" onclick = "resetColor()">RESET</button>
+                <button type = "button" onclick = "saveColor()">SAVE</button>
+                <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
+              </div>
+      
+          <!--</div>-->
         </div>
-
       </div>
-      <div class="popup-shareContainer">
+      <!--<div class="popup-shareContainer">
         <div class="content">
           <span class="icon-close">
             <i class="ri-close-line"></i>
@@ -101,21 +113,7 @@
 
       </div>-->
       <!-- Edit Dialog Box-->
-      <div id = "edit">
-
-        <!-- color picker container-->
-        <div id="picker"></div>
-  
-        <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
-        <div id = "editButtons">
-          <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
-          <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
-          <button type = "button" onclick = "resetColor()">RESET</button>
-          <button type = "button" onclick = "saveColor()">SAVE</button>
-          <button type = "button" onclick = "displayEdit()">CLOSE</button>
-        </div>
-  
-      </div>
+      
 
     </main>
     <!--<footer>

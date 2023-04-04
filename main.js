@@ -15,6 +15,7 @@ const popupSwitchWrapper = document.querySelector(".popup-switchContainer");
 const popupColourWrapper = document.querySelector(".popup-colourContainer");
 const popupShareWrapper = document.querySelector(".popup-shareContainer");
 const iconClose = document.querySelector(".ri-close-line");
+const iconClose2 = document.querySelector(".icon-close2");
 
 // classes used
 let shadowClass = "shadowKeys";
