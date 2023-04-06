@@ -31,15 +31,15 @@ fetch('JSON/keydb.json')
     let keySoundsUp = keySoundsUp1;
   
     //event listeners to the buttons to switch between sound sets
-    document.getElementById("button1").addEventListener("click", function() {
+    document.getElementById("switch-button1").addEventListener("click", function() {
       keySounds = keySounds1;
       keySoundsUp = keySoundsUp1;
     });
-    document.getElementById("button2").addEventListener("click", function() {
+    document.getElementById("switch-button2").addEventListener("click", function() {
       keySounds = keySounds2;
       keySoundsUp = keySoundsUp2;
     });
-      document.getElementById("button3").addEventListener("click", function() {
+      document.getElementById("switch-button3").addEventListener("click", function() {
       keySounds = keySounds3;
       keySoundsUp = keySoundsUp3;
     });
@@ -66,7 +66,7 @@ fetch('JSON/keydb.json')
 
   // get the textbox element
 const textbox = document.querySelector('.textbox');
-const clearBtn = document.querySelector('.clearBtn');
+const clearBtn = document.getElementById("clearbutton");
 
 // listen for input events on the textbox
 textbox.addEventListener('input', function() {
@@ -142,6 +142,9 @@ async function init() {
 
 // loads the svg into the parent container
 async function getSVG(parent, file) {
+    console.log("in get svg");
+    console.log(parent);
+    console.log(file);
     const response = await fetch(file);
     const data = await response.text();
     parent.insertAdjacentHTML("afterbegin", data);
