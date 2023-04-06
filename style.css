@@ -93,7 +93,7 @@ body {
       flex-direction: column;
     }
     /*button styling for switch, colour, share, and music*/
-    .switch-button, .colour-button, .share-button, .music-button{
+    .switch-button, .colour-button, .share-button {
       font-size: 25px;
       color: #FFBE00;
       height: auto;
@@ -130,7 +130,7 @@ body {
       font-size: 25px;
     }
     
-    .switch-button::before, .colour-button::before, .share-button::before, .music-button::before {
+    .switch-button::before, .colour-button::before, .share-button::before {
       content: "";
       display: block;
       position: absolute;
@@ -142,7 +142,7 @@ body {
       z-index: -1;
     }
     
-    .switch-button::after, .colour-button::after, .share-button::after, .music-button::after{
+    .switch-button::after, .colour-button::after, .share-button::after {
       content: "";
       display: block;
       position: absolute;
@@ -154,7 +154,7 @@ body {
       z-index: -1;
     }
     
-    .switch-button , .colour-button, .share-button, .music-button{
+    .switch-button , .colour-button, .share-button {
       padding: 10px 10px;
       position: relative;
       background: #1C819E;
@@ -180,18 +180,23 @@ body {
     
     .textbox {
       position: absolute;
-      top: 125px;
+      top: 50px;
       left: 100px;
       height: 200px;
       width: 300px;
       background-color: transparent;
       color:#E6E6D4;
       font-family: 'Press Start 2P', cursive;
+      overflow: scroll;
+    }
+
+    p {
+      border: none;
     }
 
     .clear-button {
       position: absolute;
-      top: 375px;
+      top: 300px;
       left: 10px;
       background-color: transparent;
       border-color: transparent;
@@ -497,6 +502,10 @@ main h2 {
         height: 100%;
         left: 0;
         top: 0;
+      }
+
+      :Board {
+        opacity: 30%
       }
 
       /*Switch pop up*/
