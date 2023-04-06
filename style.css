@@ -177,7 +177,7 @@ body {
       top: 0;
       left: 0;
     }
-
+    
     .textbox {
       position: absolute;
       top: 125px;
@@ -255,6 +255,7 @@ body {
 }
 .content .ri-close-line{
   position: absolute;
+  
   top: 0;
   right: 0;
   width: 45px;
@@ -434,7 +435,85 @@ main h2 {
         .popup-shareContainer.active-popup{
           transform: scale(1);
         }
-      
+          .share-btn{
+            position: relative;
+            border: none;
+            background: #a8dadc;
+            color: #003049;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            padding-top: 2.5px;
+            padding-right: 3px;
+            cursor: pointer;
+            z-index: 2;
+          }
+          .popup-shareContainer .share-options{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute;
+            margin-top: 4rem;
+            top: 40%;
+            left: 10%;
+            width: 80%;
+            height: auto;
+            transform-origin: top left;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background: rgba(15, 15, 15, 0.5);
+            color: #a8dadc;
+            padding: 20px;
+            transition: .5s;
+            transition-delay: .5s;
+            transform: scale(0);
+          }
+          .share-options.active{
+            transform: scale(1);
+            transition-delay: 0s;
+          }
+          .link-container{
+            opacity: 0;
+            transition: .5s;
+            transition-delay: 0s;
+            width: 90%;
+            position: relative;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            border-radius: 40px;
+            background-color: #fff;
+            overflow: hidden;
+            padding: 0 10px;
+            margin-bottom: 1rem;
+          }
+          .link{
+            width: 80%;
+            height: 100%;
+            line-height: 40px;
+            color: #000;
+            font-size: 0.75vw;
+          }
+          .copy-button{
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+            background: #000;
+            color: #fff;
+            border: none;
+            height: 100%;
+            width: 30%;
+            text-transform: capitalize;
+            font-size: 1vw;
+          }
+          .share-options.active .link-container{
+            opacity: 1;
+            transition: .5s;
+            transition-delay: .5s;
+          }
+          
           /*.popup-shareContainer .content{
             text-align: center;
             width: 40vw;

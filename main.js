@@ -18,6 +18,11 @@ const iconClose = document.querySelector(".ri-close-line");
 const iconClose2 = document.querySelector(".icon-close2");
 const iconClose3 = document.querySelector(".icon-close3");
 
+//share button
+
+const shareBtn = document.querySelector(".share-btn");
+const shareOptions = document.querySelector(".share-options");
+
 // classes used
 let shadowClass = "shadowKeys";
 let normalKeyClass = "normalKeys";
@@ -36,7 +41,7 @@ let selectedKeys = [];
 
 // color picker object
 const colorPicker = new iro.ColorPicker("#picker", {
-    width: 320,
+    width: 175,
     color: "#f00"
 });
 
@@ -237,3 +242,9 @@ colorPicker.on('color:change', function(color) {
         changeColor(selectedKeys[i].id, color.hexString);
     }
 });
+
+//Share buttons
+shareBtn.addEventListener("click", ()=>{
+    //console.log("hello");
+    shareOptions.classList.toggle("active");
+  });
