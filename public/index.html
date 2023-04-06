@@ -31,6 +31,9 @@
     <!-- Source for the Color Picker-->
     <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
 
+    <!-- importing p5.js library cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+
   </head>
 
   <!-- INIT FUNCTION EXECUTED ON BODY LOAD-->
@@ -67,9 +70,23 @@
           </div>
           <div class="right">
             <div class="music">
-              <button class="music-button">Music</button>
+              <button class="music-button" onclick="changeButton"><img class="musicbutton" src="images/music_on.png"></button>
             </div>
+            <div class="mode">
+              <div class="paint">
+                <img class="paintbutton" src="images/paint.png">
+              </div>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+              <div class="text">
+                <img class="textbutton" src="images/text.png">
+              </div>
+            </div>
+
             <img class="mouse" src="images/mouse.png" alt="mouse">
+
           </div>
         </div>
       </div>
@@ -81,9 +98,9 @@
           </span>
           <h2>Switches</h2>
           <div class="buttons">
-            <button class="switch-button1">Switch1</button>
-            <button class="switch-button2">Switch2</button>
-            <button class="switch-button3">Switch3</button>
+            <button id="switch-button1">Switch1</button>
+            <button id="switch-button2">Switch2</button>
+            <button id="switch-button3">Switch3</button>
           </div>
         </div>
       </div>
