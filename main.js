@@ -31,7 +31,7 @@ fetch('JSON/keydb.json')
     let keySoundsUp = keySoundsUp1;
   
     // event listeners to the buttons to switch between sound sets
-    document.getElementById("button1").addEventListener("click", function() {
+    /*document.getElementById("button1").addEventListener("click", function() {
       keySounds = keySounds1;
       keySoundsUp = keySoundsUp1;
     });
@@ -43,7 +43,7 @@ fetch('JSON/keydb.json')
       keySounds = keySounds3;
       keySoundsUp = keySoundsUp3;
     });
-  
+   */
   
     // event listener to detect key presses
     document.addEventListener("keydown", function(event) {
@@ -264,10 +264,33 @@ function removeKeyListeners() {
     }
 }
 
+function insertText(char) {
+
+    p = document.getElementById("textbox");
+
+    if (char == "CapsLock" || char == "Shift" || char == "Meta" || char == "Alt" || char == "Control") {
+        return;
+    }
+
+    else if (char == "Backspace") {
+        p.innerHTML = p.innerHTML.substring(0, p.innerHTML.length-1);
+    }
+
+    else if (char == "Enter") {
+        p.innerHTML+= "<br>";
+    }
+
+    else {
+        p.innerHTML += char;
+    }
+
+}
+
 // event listener for keydown
 document.addEventListener("keydown", function(event){
     event.preventDefault();
     toggleShadow(event, true);
+    insertText(event.key);
 });
 
 // event listener for keyup
