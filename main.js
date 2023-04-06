@@ -1,3 +1,87 @@
+/* key presses -> audio */
+// Load the JSON data from a file
+fetch('JSON/keydb.json')
+  .then(response => response.json())
+  .then(keyData => {
+    // Create an object to map key codes to audio files
+    const keySounds1 = {};
+    const keySoundsUp1 = {};
+  
+    const keySounds2 = {};
+    const keySoundsUp2 = {};
+  
+    const keySounds3 = {};
+    const keySoundsUp3 = {};
+  
+    for (let i = 0; i < keyData.key_sound1.length; i++) {
+      // topre
+      keySounds1[keyData.key_sound1[i].key_code] = keyData.key_sound1[i].sound_src;
+      keySoundsUp1[keyData.key_sound1[i].key_code] = keyData.key_sound1[i].sound_up_src;
+      // cream
+      keySounds2[keyData.key_sound2[i].key_code] = keyData.key_sound2[i].sound_src;
+      keySoundsUp2[keyData.key_sound2[i].key_code] = keyData.key_sound2[i].sound_up_src;
+      // mxblack
+      keySounds3[keyData.key_sound3[i].key_code] = keyData.key_sound3[i].sound_src;
+      keySoundsUp3[keyData.key_sound3[i].key_code] = keyData.key_sound3[i].sound_up_src;
+      
+    }
+  
+    // Default to button1
+    let keySounds = keySounds1;
+    let keySoundsUp = keySoundsUp1;
+  
+    //event listeners to the buttons to switch between sound sets
+    document.getElementById("switch-button1").addEventListener("click", function() {
+      keySounds = keySounds1;
+      keySoundsUp = keySoundsUp1;
+    });
+    document.getElementById("switch-button2").addEventListener("click", function() {
+      keySounds = keySounds2;
+      keySoundsUp = keySoundsUp2;
+    });
+      document.getElementById("switch-button3").addEventListener("click", function() {
+      keySounds = keySounds3;
+      keySoundsUp = keySoundsUp3;
+    });
+  
+    // event listener to detect key presses
+    document.addEventListener("keydown", function(event) {
+      const keyCode = event.code;
+      if (keySounds[keyCode]) {
+        const audio = new Audio(keySounds[keyCode]);
+        audio.currentTime = 0;
+        audio.play();
+      }
+    });
+  
+      document.addEventListener("keyup", function(event) {
+      const keyCode = event.code;
+      if (keySoundsUp[keyCode]) {
+        const audio = new Audio(keySoundsUp[keyCode]);
+        audio.currentTime = 0;
+        audio.play();
+      }
+    });
+  });
+
+  // get the textbox element
+const textbox = document.querySelector('.textbox');
+const clearBtn = document.getElementById("clearbutton");
+
+// listen for input events on the textbox
+textbox.addEventListener('input', function() {
+  // get the text content of the textbox
+  const text = textbox.textContent;
+
+  console.log(text);
+});
+
+
+clearBtn.addEventListener('click', function() {
+  textbox.textContent = '';
+});
+
+
 // data files
 const svgFile = "SVG/keys.svg";
 const svgBoardFile = "SVG/board.svg";
@@ -29,11 +113,11 @@ let normalKeyClass = "normalKeys";
 let editingModeKeyClass = "editingModeKeys";
 let selectedClass = "selectedKeys";
 
-
 // Important information about the keys
 let svg = null; // container for all the key elements
 let svgBoard = null;
 let codeList = null; // list of all the active keys
+let boardID = "Board";
 let keyColorData = null; // list of all the color data
 
 // selected keys array
@@ -44,6 +128,12 @@ const colorPicker = new iro.ColorPicker("#picker", {
     width: 175,
     color: "#f00"
 });
+
+const colorPickerBoard = new iro.ColorPicker("#pickerBoard", {
+    width: 320,
+    color: "#f00",
+});
+
 
 // initialization function
 async function init() {
@@ -57,6 +147,9 @@ async function init() {
 
 // loads the svg into the parent container
 async function getSVG(parent, file) {
+    console.log("in get svg");
+    console.log(parent);
+    console.log(file);
     const response = await fetch(file);
     const data = await response.text();
     parent.insertAdjacentHTML("afterbegin", data);
@@ -75,13 +168,19 @@ function changeColor (key, hex) {
     svg.getElementById(key).querySelector("rect").setAttribute("fill", hex);
 }
 
+function changeColorBoard (hex) {
+    svgBoard.setAttribute("fill", hex);
+}
+
 // resets the colors based on the colors in the current list
 function resetColor () {
     for (key in codeList) {
         if (codeList[key] == true) {
-            changeColor(key, keyColorData[key].color)
+            changeColor(key, keyColorData[key].color);
         }
     }
+
+    changeColorBoard(keyColorData[boardID].color);
 }
 
 // saves the color to the list
@@ -91,6 +190,8 @@ function saveColor () {
             keyColorData[key].color = svg.getElementById(key).querySelector("rect").getAttribute("fill");
         }
     }
+
+    keyColorData(boardID).color = svgBoard.getElementById(boardID).getAttribute("fill");
 }
 
 // toggles key shadow class On/Off
@@ -188,10 +289,33 @@ function removeKeyListeners() {
     }
 }
 
+function insertText(char) {
+
+    p = document.getElementById("textbox");
+
+    if (char == "CapsLock" || char == "Shift" || char == "Meta" || char == "Alt" || char == "Control") {
+        return;
+    }
+
+    else if (char == "Backspace") {
+        p.innerHTML = p.innerHTML.substring(0, p.innerHTML.length-1);
+    }
+
+    else if (char == "Enter") {
+        p.innerHTML+= "<br>";
+    }
+
+    else {
+        p.innerHTML += char;
+    }
+
+}
+
 // event listener for keydown
 document.addEventListener("keydown", function(event){
     event.preventDefault();
     toggleShadow(event, true);
+    insertText(event.key);
 });
 
 // event listener for keyup
@@ -243,8 +367,13 @@ colorPicker.on('color:change', function(color) {
     }
 });
 
+
 //Share buttons
 shareBtn.addEventListener("click", ()=>{
     //console.log("hello");
     shareOptions.classList.toggle("active");
   });
+
+colorPickerBoard.on('color:change', (color) => {
+    changeColorBoard(color.hexString);
+});

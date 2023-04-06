@@ -1,0 +1,1152 @@
+{
+    "key_sound1" : [
+      {
+        "key_code": "F1",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F2",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F3",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F4",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F5",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F6",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F7",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F8",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F9",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F10",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F11",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "F12",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Escape",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit1",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit2",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit3",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit4",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit5",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit6",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit7",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit8",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit9",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Digit0",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Minus",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Equal",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Backquote",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyQ",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyW",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyE",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyR",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyT",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyY",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyU",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyI",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyO",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyP",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "BracketLeft",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "BracketRight",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Backslash",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Tab",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyA",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyS",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyD",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyF",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyG",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyH",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyJ",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyK",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyL",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Semicolon",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Quote",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "CapsLock",
+        "sound_src": "audio/topre/topre_R2.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyZ",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyX",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyC",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyV",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyB",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyN",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "KeyM",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Comma",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Period",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Slash",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "ShiftLeft",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "ShiftRight",
+        "sound_src": "audio/topre/topre_R3.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "ControlLeft",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "AltLeft",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "MetaLeft",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "MetaRight",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "AltRight",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "ArrowUp",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "ArrowDown",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "ArrowLeft",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "ArrowRight",
+        "sound_src": "audio/topre/topre_R1.mp3",
+        "sound_up_src": "audio/topre/topre_release.mp3"
+      },
+      {
+        "key_code": "Backspace",
+        "sound_src": "audio/topre/topre_backspace.mp3",
+        "sound_up_src": "audio/topre/topre_release_backspace.mp3"
+      },
+      {
+        "key_code": "Enter",
+        "sound_src": "audio/topre/topre_enter.mp3",
+        "sound_up_src": "audio/topre/topre_release_enter.mp3"
+      },
+      {
+        "key_code": "Space",
+        "sound_src": "audio/topre/topre_space.mp3",
+        "sound_up_src": "audio/topre/topre_release_space.mp3"
+      }
+    ],
+    
+      "key_sound2" : [
+        {
+          "key_code": "F1",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F2",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F3",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F4",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F5",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F6",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F7",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F8",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F9",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F10",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F11",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "F12",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Escape",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit1",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit2",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit3",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit4",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit5",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit6",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit7",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit8",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit9",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Digit0",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Minus",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Equal",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Backquote",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyQ",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyW",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyE",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyR",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyT",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyY",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyU",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyI",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyO",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyP",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "BracketLeft",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "BracketRight",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Backslash",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Tab",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyA",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyS",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyD",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyF",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyG",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyH",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyJ",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyK",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyL",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Semicolon",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Quote",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "CapsLock",
+          "sound_src": "audio/topre/cream/cream_R2.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyZ",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyX",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyC",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyV",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyB",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyN",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "KeyM",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Comma",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Period",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Slash",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "ShiftLeft",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "ShiftRight",
+          "sound_src": "audio/topre/cream/cream_R3.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "ControlLeft",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "AltLeft",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "MetaLeft",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "MetaRight",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "AltRight",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "ArrowUp",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "ArrowDown",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "ArrowLeft",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "ArrowRight",
+          "sound_src": "audio/topre/cream/cream_R1.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release.mp3"
+        },
+        {
+          "key_code": "Backspace",
+          "sound_src": "audio/topre/cream/cream_backspace.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release_backspace.mp3"
+        },
+        {
+          "key_code": "Enter",
+          "sound_src": "audio/topre/cream/cream_enter.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release_enter.mp3"
+        },
+        {
+          "key_code": "Space",
+          "sound_src": "audio/topre/cream/cream_space.mp3",
+          "sound_up_src": "audio/topre/cream/cream_release_space.mp3"
+        }
+    ],
+    
+        "key_sound3" : [
+          {
+            "key_code": "F1",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F2",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F3",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F4",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F5",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F6",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F7",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F8",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F9",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F10",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F11",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "F12",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Escape",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit1",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit2",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit3",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit4",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit5",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit6",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit7",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit8",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit9",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Digit0",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Minus",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Equal",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Backquote",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyQ",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyW",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyE",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyR",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyT",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyY",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyU",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyI",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyO",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyP",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "BracketLeft",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "BracketRight",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Backslash",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Tab",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyA",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyS",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyD",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyF",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyG",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyH",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyJ",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyK",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyL",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Semicolon",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Quote",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "CapsLock",
+            "sound_src": "audio/topre/mxblack/mxblack_R2.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyZ",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyX",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyC",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyV",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyB",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyN",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "KeyM",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Comma",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Period",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Slash",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "ShiftLeft",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "ShiftRight",
+            "sound_src": "audio/topre/mxblack/mxblack_R3.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "ControlLeft",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "AltLeft",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "MetaLeft",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "MetaRight",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "AltRight",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "ArrowUp",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "ArrowDown",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "ArrowLeft",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "ArrowRight",
+            "sound_src": "audio/topre/mxblack/mxblack_R1.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release.mp3"
+          },
+          {
+            "key_code": "Backspace",
+            "sound_src": "audio/topre/mxblack/mxblack_backspace.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release_backspace.mp3"
+          },
+          {
+            "key_code": "Enter",
+            "sound_src": "audio/topre/mxblack/mxblack_enter.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release_enter.mp3"
+          },
+          {
+            "key_code": "Space",
+            "sound_src": "audio/topre/mxblack/mxblack_space.mp3",
+            "sound_up_src": "audio/topre/mxblack/mxblack_release_space.mp3"
+          }
+    ]
+    
+  }
+  
