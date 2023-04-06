@@ -31,7 +31,7 @@ fetch('JSON/keydb.json')
     let keySoundsUp = keySoundsUp1;
   
     // event listeners to the buttons to switch between sound sets
-    /*document.getElementById("button1").addEventListener("click", function() {
+    document.getElementById("button1").addEventListener("click", function() {
       keySounds = keySounds1;
       keySoundsUp = keySoundsUp1;
     });
@@ -43,7 +43,6 @@ fetch('JSON/keydb.json')
       keySounds = keySounds3;
       keySoundsUp = keySoundsUp3;
     });
-   */
   
     // event listener to detect key presses
     document.addEventListener("keydown", function(event) {
