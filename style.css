@@ -207,6 +207,16 @@ body {
       width: auto;
     }
 
+    .box {
+      position: absolute;
+      top: 75px;
+      left: 65px;      
+      border: red solid 1px;
+      height: 200px;
+      width: 275px;
+
+    }
+
     .keyboard {
       position:relative;
       z-index: 999999;
