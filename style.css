@@ -3,9 +3,9 @@ svg {
   width: 100%;
   height: 100%;
 }
-.keyboard{
-  
-}
+/*.keyboard{
+
+}*/
 /* defines the styling for the shadow overlay keys (when keys are pressed down) */
 .shadowKeys {
   fill: black;
