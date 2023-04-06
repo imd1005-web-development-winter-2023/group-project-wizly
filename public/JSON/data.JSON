@@ -241,5 +241,9 @@
 
     "ControlRight":  {
         "color": "#ff0000"
+    },
+
+    "Board": {
+        "color": "#ff0000"
     }
  }
