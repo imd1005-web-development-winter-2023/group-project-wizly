@@ -65,6 +65,24 @@ fetch('JSON/keydb.json')
     });
   });
 
+  // get the textbox element
+const textbox = document.querySelector('.textbox');
+const clearBtn = document.querySelector('.clearBtn');
+
+// listen for input events on the textbox
+textbox.addEventListener('input', function() {
+  // get the text content of the textbox
+  const text = textbox.textContent;
+
+  console.log(text);
+});
+
+
+clearBtn.addEventListener('click', function() {
+  textbox.textContent = '';
+});
+
+
 // data files
 const svgFile = "SVG/keys.svg";
 const svgBoardFile = "SVG/board.svg";
