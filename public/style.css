@@ -491,3 +491,21 @@ Screen reader text utility class
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;}
+
+  /* TEXT BOX */
+  .textbox {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    color: white;
+  }
