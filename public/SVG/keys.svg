@@ -1,185 +1,185 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 809.3 269.68">
-    <g id="KeyZ">
-        <rect class="cls-1" x="122.24" y="161.95" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Tab">
-        <rect class="cls-1" y="53.87" width="81.71" height="53.87" rx="5.91" />
-    </g>
-    <g id="Backquote">
-        <rect class="cls-1" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit2">
-        <rect class="cls-1" x="108.64" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit3">
-        <rect class="cls-1" x="162.51" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit4">
-        <rect class="cls-1" x="216.38" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit5">
-        <rect class="cls-1" x="270.24" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit1">
-        <rect class="cls-1" x="54.77" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="CapsLock">
-        <rect class="cls-1" y="108.08" width="95.16" height="53.87" rx="5.91" />
-    </g>
-    <g id="ShiftLeft">
-        <rect class="cls-1" y="161.95" width="122.37" height="53.87" rx="5.91" />
-    </g>
-    <g id="ControlLeft">
-        <rect class="cls-1" y="215.82" width="68.04" height="53.87" rx="5.91" />
-    </g>
-    <g id="MetaLeft">
-        <rect class="cls-1" x="68.04" y="215.82" width="67.17" height="53.87" rx="5.91" />
-    </g>
-    <g id="AltLeft">
-        <rect class="cls-1" x="135.58" y="215.82" width="67.17" height="53.87" rx="5.91" />
-    </g>
-    <g id="AltRight">
-        <rect class="cls-1" x="540.63" y="215.99" width="67.17" height="53.69" rx="5.91" />
-    </g>
-    <g id="MetaRight">
-        <rect class="cls-1" x="607.8" y="215.82" width="67.17" height="53.87" rx="5.91" />
-    </g>
-    <g id="ContextMenu">
-        <rect class="cls-1" x="674.97" y="215.82" width="67.17" height="53.87" rx="5.91" />
-    </g>
-    <g id="ControlRight">
-        <rect class="cls-1" x="742.13" y="215.82" width="67.17" height="53.87" rx="5.91" />
-    </g>
-    <g id="ShiftRight">
-        <rect class="cls-1" x="661.82" y="161.95" width="147.48" height="53.87" rx="5.91" />
-    </g>
-    <g id="Enter">
-        <rect class="cls-1" x="689.11" y="108.08" width="120.19" height="53.87" rx="5.91" />
-    </g>
-    <g id="Backslash">
-        <rect class="cls-1" x="729.3" y="54.22" width="80" height="53.87" rx="5.91" />
-    </g>
-    <g id="Backspace">
-        <rect class="cls-1" x="702.57" y="0.35" width="106.73" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit6">
-        <rect class="cls-1" x="324.11" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit7">
-        <rect class="cls-1" x="378.35" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit8">
-        <rect class="cls-1" x="432.21" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit9">
-        <rect class="cls-1" x="486.08" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Digit0">
-        <rect class="cls-1" x="539.95" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Minus">
-        <rect class="cls-1" x="593.81" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Equal">
-        <rect class="cls-1" x="648.19" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyQ">
-        <rect class="cls-1" x="81.71" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyW">
-        <rect class="cls-1" x="135.58" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyE">
-        <rect class="cls-1" x="189.44" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyR">
-        <rect class="cls-1" x="243.31" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyT">
-        <rect class="cls-1" x="297.18" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyY">
-        <rect class="cls-1" x="351.04" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyU">
-        <rect class="cls-1" x="405.28" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyI">
-        <rect class="cls-1" x="459.15" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyO">
-        <rect class="cls-1" x="513.01" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyP">
-        <rect class="cls-1" x="566.88" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="BracketLeft">
-        <rect class="cls-1" x="621.26" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="BracketRight">
-        <rect class="cls-1" x="675.13" y="54.04" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyA">
-        <rect class="cls-1" x="95.44" y="108.08" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyS">
-        <rect class="cls-1" x="149.31" y="108.08" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyD">
-        <rect class="cls-1" x="203.17" y="108.08" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyF">
-        <rect class="cls-1" x="257.04" y="108.07" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyG">
-        <rect class="cls-1" x="310.91" y="108.08" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyH">
-        <rect class="cls-1" x="364.77" y="108.07" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyJ">
-        <rect class="cls-1" x="418.64" y="108.08" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyK">
-        <rect class="cls-1" x="472.51" y="108.07" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyL">
-        <rect class="cls-1" x="526.94" y="107.91" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Semicolon">
-        <rect class="cls-1" x="580.81" y="108.07" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Quote">
-        <rect class="cls-1" x="634.88" y="108.08" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyX">
-        <rect class="cls-1" x="176.24" y="161.95" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyC">
-        <rect class="cls-1" x="230.11" y="162.12" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyV">
-        <rect class="cls-1" x="283.97" y="162.12" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyB">
-        <rect class="cls-1" x="337.84" y="162.12" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyN">
-        <rect class="cls-1" x="391.71" y="162.12" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="KeyM">
-        <rect class="cls-1" x="445.57" y="162.12" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Comma">
-        <rect class="cls-1" x="500.01" y="162.12" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Period">
-        <rect class="cls-1" x="553.88" y="162.12" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Slash">
-        <rect class="cls-1" x="608.03" y="161.95" width="53.87" height="53.87" rx="5.91" />
-    </g>
-    <g id="Space">
-        <rect class="cls-1" x="203.17" y="215.99" width="336.77" height="53.69" rx="5.91" />
-    </g>
+<svg id="Keys" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 290">
+  <g id="KeyZ">
+    <rect class="cls-1" x="132.51" y="170.8" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Tab">
+    <rect class="cls-1" x="10.27" y="62.72" width="81.71" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Backquote">
+    <rect class="cls-1" x="10.27" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit2">
+    <rect class="cls-1" x="118.91" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit3">
+    <rect class="cls-1" x="172.78" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit4">
+    <rect class="cls-1" x="226.65" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit5">
+    <rect class="cls-1" x="280.51" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit1">
+    <rect class="cls-1" x="65.04" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="CapsLock">
+    <rect class="cls-1" x="10.27" y="116.93" width="95.16" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="ShiftLeft">
+    <rect class="cls-1" x="10.27" y="170.8" width="122.37" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="ControlLeft">
+    <rect class="cls-1" x="10.27" y="224.67" width="68.04" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="MetaLeft">
+    <rect class="cls-1" x="78.31" y="224.67" width="67.17" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="AltLeft">
+    <rect class="cls-1" x="145.85" y="224.67" width="67.17" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="AltRight">
+    <rect class="cls-1" x="550.9" y="224.84" width="67.17" height="53.69" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="MetaRight">
+    <rect class="cls-1" x="618.07" y="224.67" width="67.17" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="ContextMenu">
+    <rect class="cls-1" x="685.24" y="224.67" width="67.17" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="ControlRight">
+    <rect class="cls-1" x="752.4" y="224.67" width="67.17" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="ShiftRight">
+    <rect class="cls-1" x="672.09" y="170.8" width="147.48" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Enter">
+    <rect class="cls-1" x="699.38" y="116.93" width="120.19" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Backslash">
+    <rect class="cls-1" x="739.57" y="63.07" width="80" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Backspace">
+    <rect class="cls-1" x="712.84" y="9.2" width="106.73" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit6">
+    <rect class="cls-1" x="334.38" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit7">
+    <rect class="cls-1" x="388.62" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit8">
+    <rect class="cls-1" x="442.48" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit9">
+    <rect class="cls-1" x="496.35" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Digit0">
+    <rect class="cls-1" x="550.22" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Minus">
+    <rect class="cls-1" x="604.08" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Equal">
+    <rect class="cls-1" x="658.46" y="8.85" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyQ">
+    <rect class="cls-1" x="91.98" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyW">
+    <rect class="cls-1" x="145.85" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyE">
+    <rect class="cls-1" x="199.71" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyR">
+    <rect class="cls-1" x="253.58" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyT">
+    <rect class="cls-1" x="307.45" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyY">
+    <rect class="cls-1" x="361.31" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyU">
+    <rect class="cls-1" x="415.55" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyI">
+    <rect class="cls-1" x="469.42" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyO">
+    <rect class="cls-1" x="523.28" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyP">
+    <rect class="cls-1" x="577.15" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="BracketLeft">
+    <rect class="cls-1" x="631.53" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="BracketRight">
+    <rect class="cls-1" x="685.4" y="62.89" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyA">
+    <rect class="cls-1" x="105.71" y="116.93" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyS">
+    <rect class="cls-1" x="159.58" y="116.93" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyD">
+    <rect class="cls-1" x="213.44" y="116.93" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyF">
+    <rect class="cls-1" x="267.31" y="116.92" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyG">
+    <rect class="cls-1" x="321.18" y="116.93" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyH">
+    <rect class="cls-1" x="375.04" y="116.92" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyJ">
+    <rect class="cls-1" x="428.91" y="116.93" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyK">
+    <rect class="cls-1" x="482.78" y="116.92" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyL">
+    <rect class="cls-1" x="537.21" y="116.76" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Semicolon">
+    <rect class="cls-1" x="591.08" y="116.92" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Quote">
+    <rect class="cls-1" x="645.15" y="116.93" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyX">
+    <rect class="cls-1" x="186.51" y="170.8" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyC">
+    <rect class="cls-1" x="240.38" y="170.97" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyV">
+    <rect class="cls-1" x="294.24" y="170.97" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyB">
+    <rect class="cls-1" x="348.11" y="170.97" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyN">
+    <rect class="cls-1" x="401.98" y="170.97" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="KeyM">
+    <rect class="cls-1" x="455.84" y="170.97" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Comma">
+    <rect class="cls-1" x="510.28" y="170.97" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Period">
+    <rect class="cls-1" x="564.15" y="170.97" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Slash">
+    <rect class="cls-1" x="618.3" y="170.8" width="53.87" height="53.87" rx="5.91" ry="5.91"/>
+  </g>
+  <g id="Space">
+    <rect class="cls-1" x="213.44" y="224.84" width="336.77" height="53.69" rx="5.91" ry="5.91"/>
+  </g>
 </svg>

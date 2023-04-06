@@ -1,5 +1,6 @@
 // data files
 const svgFile = "SVG/keys.svg";
+const svgBoardFile = "SVG/board.svg";
 const listFile = "JSON/codes.JSON";
 const dataFile = "JSON/data.JSON";
 
@@ -14,6 +15,8 @@ const popupSwitchWrapper = document.querySelector(".popup-switchContainer");
 const popupColourWrapper = document.querySelector(".popup-colourContainer");
 const popupShareWrapper = document.querySelector(".popup-shareContainer");
 const iconClose = document.querySelector(".ri-close-line");
+const iconClose2 = document.querySelector(".icon-close2");
+const iconClose3 = document.querySelector(".icon-close3");
 
 // classes used
 let shadowClass = "shadowKeys";
@@ -24,6 +27,7 @@ let selectedClass = "selectedKeys";
 
 // Important information about the keys
 let svg = null; // container for all the key elements
+let svgBoard = null;
 let codeList = null; // list of all the active keys
 let keyColorData = null; // list of all the color data
 
@@ -39,6 +43,7 @@ const colorPicker = new iro.ColorPicker("#picker", {
 // initialization function
 async function init() {
     svg = await getSVG(figure, svgFile);
+    svgBoard = await getSVG(figure, svgBoardFile);
     svg.setAttribute("class", normalKeyClass);
     codeList = await getJSON(listFile);
     keyColorData = await getJSON(dataFile);
@@ -190,13 +195,6 @@ document.addEventListener("keyup", function(event){
     toggleShadow(event, false);
 });
 
-// event listener for color wheel change
-colorPicker.on('color:change', function(color) {
-    for (var i = 0; i < selectedKeys.length; i++) {
-        changeColor(selectedKeys[i].id, color.hexString);
-    }
-});
-
 //
 function changeImage() {
     if (document.getElementById("clearbutton").src == "images/clear_button.png"){
@@ -214,5 +212,28 @@ btPopupSwitch.addEventListener("click", ()=>{
     //console.log("hello");
     popupSwitchWrapper.classList.remove("active-popup");
   });
+
+  btPopupColour.addEventListener("click", ()=>{
+    popupColourWrapper.classList.add("active-popup");
+  });
   
-  
+  iconClose2.addEventListener("click", ()=>{
+    //console.log("hello");
+    popupColourWrapper.classList.remove("active-popup");
+  });
+
+  btPopupShare.addEventListener("click", ()=>{
+    popupShareWrapper.classList.add("active-popup");
+  });
+
+  iconClose3.addEventListener("click", ()=>{
+    //console.log("hello");
+    popupShareWrapper.classList.remove("active-popup");
+  });
+
+// event listener for color wheel change
+colorPicker.on('color:change', function(color) {
+    for (var i = 0; i < selectedKeys.length; i++) {
+        changeColor(selectedKeys[i].id, color.hexString);
+    }
+});

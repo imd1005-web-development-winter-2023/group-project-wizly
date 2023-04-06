@@ -52,7 +52,7 @@
               <button class="clear-button" onclick="changeButton"><img id="clearbutton" src="images/clear_button.png"></button>
             </div>
             <div class="keyboard">
-              <img class="keyboard-layout" height="200vh" src="images/keyboard.png" alt="keyboard">
+              <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">
               <!-- Container for keyboard overlay-->
               <figure id="svg-container" class="keyboard-color">
                 <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
@@ -82,40 +82,44 @@
         </div>
       </div>
 
-      <!--<div class="popup-colourContainer">
+      <div class="popup-colourContainer">
         <div class="content">
-          <span class="icon-close">
+          <span class="icon-close2" onclick = "displayEdit()">
             <i class="ri-close-line"></i>
           </span>
           <h2>Colour</h2>
+          
+          <div id = "edit">
+            <!-- color picker container-->
+            <div id="picker" class="picker"></div>
+            <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
+            <div id = "editButtons" class="editButtons">
+              <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
+              <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
+              <button type = "button" onclick = "resetColor()">RESET</button>
+              <button type = "button" onclick = "saveColor()">SAVE</button>
+              <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
+            </div>
+          </div>
+          <!--<div class="keyboard">
+            <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">-->
+            <!-- Container for keyboard overlay-->
+            <!--<figure id="svg-container" class="keyboard-color">-->
+              <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
+            <!--</figure>-->
+          </div>
         </div>
-
       </div>
       <div class="popup-shareContainer">
         <div class="content">
-          <span class="icon-close">
+          <span class="icon-close3">
             <i class="ri-close-line"></i>
           </span>
           <h2>Share</h2>
         </div>
-
-      </div>-->
-      <!-- Edit Dialog Box-->
-      <div id = "edit">
-
-        <!-- color picker container-->
-        <div id="picker"></div>
-  
-        <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
-        <div id = "editButtons">
-          <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
-          <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
-          <button type = "button" onclick = "resetColor()">RESET</button>
-          <button type = "button" onclick = "saveColor()">SAVE</button>
-          <button type = "button" onclick = "displayEdit()">CLOSE</button>
-        </div>
-  
       </div>
+      <!-- Edit Dialog Box-->
+      
 
     </main>
     <!--<footer>
