@@ -377,3 +377,10 @@ shareBtn.addEventListener("click", ()=>{
 colorPickerBoard.on('color:change', (color) => {
     changeColorBoard(color.hexString);
 });
+
+//music button?
+const musicbutton = document.getElementById("musicbutton");
+musicbutton.addEventListener("click", function() {
+  const myImage = myButton.querySelector("img");
+  myImage.src = "images/music_off.png";
+});

@@ -240,9 +240,9 @@ body {
     }
 
     .musicbutton {      
-      max-height: 75px;
+      max-height: 50px;
       width: auto;
-      align-content: end;
+      justify-content: flex-end;
     }
 
     .svgcolors {
@@ -270,7 +270,7 @@ body {
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #FFBE00;
+      background-color: #1C819E;
       -webkit-transition: .4s;
       transition: .4s;
     }
@@ -282,17 +282,17 @@ body {
       width: 26px;
       left: 4px;
       bottom: 4px;
-      background-color: white;
+      background-color: #FFBE00;
       -webkit-transition: .4s;
       transition: .4s;
     }
 
     input:checked + .slider {
-      background-color: #FFBE00;
+      background-color: #1C819E;
     }
 
     input:focus + .slider {
-      box-shadow: 0 0 1px #FFBE00;
+      box-shadow: 0 0 1px #1C819E;  
     }
 
     input:checked + .slider:before {
@@ -504,9 +504,6 @@ main h2 {
         top: 0;
       }
 
-      :Board {
-        opacity: 30%
-      }
 
       /*Switch pop up*/
       .popup-shareContainer {
