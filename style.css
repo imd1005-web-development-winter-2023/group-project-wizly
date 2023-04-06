@@ -3,15 +3,11 @@ svg {
   width: 100%;
   height: 100%;
 }
-/*.keyboard{
 
-}*/
 /* defines the styling for the shadow overlay keys (when keys are pressed down) */
 .shadowKeys {
   fill: black;
   opacity: 50%;
-  /*position: relative;
-  z-index: 1000;*/
 }
 
 /* defines the styling for when the keys are selected in edit mode */
@@ -46,6 +42,7 @@ svg {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* container for the edit buttons within the edit dialog box */
@@ -68,8 +65,6 @@ body {
   min-height: 100vh;}
 
 .container {
-  /*background-color: #8A1C24;*/
-  /*padding: 0px 2rem;*/
   max-width: 90%;
   max-height: 90%;
   margin-left: auto;
@@ -90,11 +85,14 @@ body {
     margin-top: 2%;
     margin-bottom: 2%;
   }
+
+    /*Left flex column for three popup buttons*/
     .left{
       display: flex;
       gap: 2rem;
       flex-direction: column;
     }
+    /*button styling for switch, colour, share, and music*/
     .switch-button, .colour-button, .share-button, .music-button{
       font-size: 25px;
       color: #FFBE00;
@@ -164,9 +162,9 @@ body {
       z-index: 2;
     }
     
+    /*Middle flex column displaying monitor and keyboard*/
     .middle{
       flex-grow: 1;
-      /*background-color: #a8dadc;*/
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -206,6 +204,7 @@ body {
 
     .keyboard {
       position:relative;
+      z-index: 999999;
       top: 0;
       left: 0;
     }
@@ -222,6 +221,7 @@ body {
       border: 1px solid blue;
     }*/
 
+    /*Right flex with music button, and mouse*/
     .right {
       display: flex;
       flex-direction: column;
@@ -239,68 +239,83 @@ body {
       align-self: end;
     }*/
 
-.popup-switchContainer{
-  display: flex;
-  align-items: center;
-  
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
-  position: fixed;
+/*common layout for all three pop ups*/
+.content{
+  text-align: center;
+  width: 40vw;
+  height: 50vh;
+  margin: 20px 0px;
+  /*margin: 85px auto 0;*/
+  padding: 15px 75px;
+  border-radius: 20px;
+  background-color: #003049;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: scroll;    
+}
+.content .ri-close-line{
+  position: absolute;
   top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
-  transform: scale(0);
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #4E6E81;
+  font-size: 2rem;
+  color: #E4DCCF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.ri-close-line:hover {
+  background-color: #a8dadc;
+  color: #003049;
+}
+main h2 {
+  margin-bottom: 2rem;
+  margin-top: 1.2rem;
+  font-size: 2vw;
+  font-family: 'Press Start 2P', cursive;
+  color: #FFBE00;                                      
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 1);
 }
 
+/*Pop up window CSS*/
+  .popup-switchContainer{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+  }
   .popup-switchContainer.active-popup{
     transform: scale(1);
   }
 
-    .popup-switchContainer .content{
+    /*.popup-switchContainer .content{
       text-align: center;
       width: 40vw;
       height: 50vh;
       margin: 20px 0px;
-      /*margin: 85px auto 0;*/
+      
       padding: 15px 75px;
       border-radius: 20px;
       background-color: #003049;
       position: relative;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
       overflow: scroll;    
-    }
-    .content .ri-close-line{
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 45px;
-      height: 45px;
-      background: #4E6E81;
-      font-size: 2rem;
-      color: #E4DCCF;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-bottom-left-radius: 20px;
-      cursor: pointer;
-      z-index: 1;
-    }
-    .ri-close-line:hover {
-      background-color: #a8dadc;
-      color: #003049;
-    }
-      main h2 {
-        margin-bottom: 2rem;
-        margin-top: 1.2rem;
-        font-size: 2vw;
-        font-family: 'Press Start 2P', cursive;
-        color: #FFBE00;                                      
-        text-transform: uppercase;
-        letter-spacing: 12px;
-        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 1);
-        
-      }
+    }*/
+    
       .buttons{
         display: flex;
         flex-direction: row;
@@ -311,13 +326,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 60vh;
   width: 100vw;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  /*background: rgba(0, 0, 0, 0.3);*/
   transform: scale(0);
 }
 
@@ -325,20 +340,20 @@ body {
     transform: scale(1);
   }
 
-    .content2{
-      text-align: center;
-      width: 40vw;
-      height: 90vh;
+   .popup-colourContainer .content{
+      /*text-align: center;*/
+      width: 45vw;
+      /*height: 50vh;
       margin: 20px 0px;
-      /*margin: 85px auto 0;*/
       padding: 15px 75px;
       border-radius: 20px;
       background-color: #003049;
       position: relative;
+      z-index: 2;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      overflow: scroll;    
+      overflow: scroll;    */
     }
-    .content2 .ri-close-line{
+    /*.popup-colourContainer .content .ri-close-line{
       position: absolute;
       top: 0;
       right: 0;
@@ -368,7 +383,9 @@ body {
         letter-spacing: 12px;
         box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 1);
         
-      }
+      }*/
+
+      /*Colour picker css*/
       .editButtons {
         display: flex;
         justify-content: flex-end;
@@ -381,9 +398,12 @@ body {
         display: flex;
         align-items: flex-end;
         margin-top: 90%;
+        position:relative;
+        z-index: 999999;
       }
       .keyboard {
         position:relative;
+        z-index: 999999;
         top: 0;
         left: 0;
       }
@@ -415,7 +435,7 @@ body {
           transform: scale(1);
         }
       
-          .popup-shareContainer .content{
+          /*.popup-shareContainer .content{
             text-align: center;
             width: 40vw;
             height: 50vh;
@@ -457,7 +477,8 @@ body {
               text-transform: uppercase;
               letter-spacing: 12px;
               box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 1);
-            }
+            }*/
+            
 /*
 Screen reader text utility class
 */
