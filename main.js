@@ -24,11 +24,11 @@ let normalKeyClass = "normalKeys";
 let editingModeKeyClass = "editingModeKeys";
 let selectedClass = "selectedKeys";
 
-
 // Important information about the keys
 let svg = null; // container for all the key elements
 let svgBoard = null;
 let codeList = null; // list of all the active keys
+let boardID = "Board";
 let keyColorData = null; // list of all the color data
 
 // selected keys array
@@ -36,9 +36,15 @@ let selectedKeys = [];
 
 // color picker object
 const colorPicker = new iro.ColorPicker("#picker", {
-    width: 320,
+    width: 320, // COLOR PICKER 1 SIZE
     color: "#f00"
 });
+
+const colorPickerBoard = new iro.ColorPicker("#pickerBoard", {
+    width: 320,
+    color: "#f00",
+});
+
 
 // initialization function
 async function init() {
@@ -70,13 +76,19 @@ function changeColor (key, hex) {
     svg.getElementById(key).querySelector("rect").setAttribute("fill", hex);
 }
 
+function changeColorBoard (hex) {
+    svgBoard.setAttribute("fill", hex);
+}
+
 // resets the colors based on the colors in the current list
 function resetColor () {
     for (key in codeList) {
         if (codeList[key] == true) {
-            changeColor(key, keyColorData[key].color)
+            changeColor(key, keyColorData[key].color);
         }
     }
+
+    changeColorBoard(keyColorData[boardID].color);
 }
 
 // saves the color to the list
@@ -86,6 +98,8 @@ function saveColor () {
             keyColorData[key].color = svg.getElementById(key).querySelector("rect").getAttribute("fill");
         }
     }
+
+    keyColorData(boardID).color = svgBoard.getElementById(boardID).getAttribute("fill");
 }
 
 // toggles key shadow class On/Off
@@ -236,4 +250,8 @@ colorPicker.on('color:change', function(color) {
     for (var i = 0; i < selectedKeys.length; i++) {
         changeColor(selectedKeys[i].id, color.hexString);
     }
+});
+
+colorPickerBoard.on('color:change', (color) => {
+    changeColorBoard(color.hexString);
 });
