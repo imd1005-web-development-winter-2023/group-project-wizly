@@ -97,12 +97,12 @@
           </span>
           <h2>Switches</h2>
           <div class="buttons">
-            <button id="switch-button1">Switch1</button>
-            <button id="switch-button2">Switch2</button>
-            <button id="switch-button3">Switch3</button>
+            <button id="switch-button1">Topre</button>
+            <button id="switch-button3">Mxblack</button>
+            <button id="switch-button2">Cream</button>
+            <button class="switch-button4">Neil</button>
           </div>
-          <br/>
-          <button class="switch-button4">Neil</button>
+          
         </div>
       </div>
 
@@ -112,27 +112,41 @@
             <i class="ri-close-line"></i>
           </span>
           <h2>Colour</h2>
-          
-          <div id = "edit">
-            <!-- color picker container-->
-            <div id="picker" class="picker"></div>
-            <div id="pickerBoard" class = "picker"></div>
-            <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
-            <div id = "editButtons" class="editButtons">
-              <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
-              <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
-              <button type = "button" onclick = "resetColor()">RESET</button>
-              <button type = "button" onclick = "saveColor()">SAVE</button>
-              <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
+          <div class="colour-Picker">
+            <div class="keyPicker">
+              <p>Key Colour</p>
+              <div id = "edit">
+                <!-- color picker container-->
+                <div id="picker" class="picker"></div>
+               
+                <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
+                <div id = "editButtons" class="editButtons">
+                  <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
+                  <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
+                  <button type = "button" onclick = "resetColor()">RESET</button>
+                  <button type = "button" onclick = "saveColor()">SAVE</button>
+                  <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
+                </div>
+              </div>
+              
+            </div>
+            <div class="boardPicker">
+              <p>Board colour</p>
+              <div class="pickerTransf">
+                <div id="pickerBoard" class = "picker"></div>
+              </div>
+              
             </div>
           </div>
+          
+          
           <!--<div class="keyboard">
             <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">-->
             <!-- Container for keyboard overlay-->
             <!--<figure id="svg-container" class="keyboard-color">-->
               <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
             <!--</figure>-->
-          </div>
+          <!--</div>-->
         </div>
       </div>
       <div class="popup-shareContainer">
