@@ -164,6 +164,7 @@ body {
     
     /*Middle flex column displaying monitor and keyboard*/
     .middle{
+      background-color: red;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
@@ -172,19 +173,12 @@ body {
       height: 100%;
     }
 
-    .screen-output {
-      position: relative;
-      top: 0;
-      left: 0;
-    }
-    
     .textbox {
       position: absolute;
-      top: 50px;
-      left: 100px;
-      height: 200px;
-      width: 300px;
-      background-color: transparent;
+      width: 50%;
+      left: 30%;
+      top: 0;
+      background-color: blue;
       color:#E6E6D4;
       font-family: 'Press Start 2P', cursive;
       overflow: scroll;
@@ -205,16 +199,6 @@ body {
     .monitor {
       max-height: 50vh;
       width: auto;
-    }
-
-    .box {
-      position: absolute;
-      top: 75px;
-      left: 65px;      
-      border: red solid 1px;
-      height: 200px;
-      width: 275px;
-
     }
 
     .keyboard {
@@ -714,19 +698,3 @@ Screen reader text utility class
   border-width: 0;}
 
   /* TEXT BOX */
-  .textbox {
-    width: 400px;
-    height: 200px;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    color: white;
-  }
