@@ -172,6 +172,10 @@ body {
       height: 100%;
     }
 
+    #textbox {
+      overflow: scroll;
+    }
+
     .textbox {
       position: absolute;
       width: 70%;
@@ -225,9 +229,10 @@ body {
       top: 0;
     }
 
-    /*.music {
-      border: 1px solid blue;
-    }*/
+    .music {
+      display: flex;
+      align-content: flex-end;
+    }
 
     /*Right flex with music button, and mouse*/
     .right {
@@ -243,7 +248,7 @@ body {
     }
 
     .musicbutton {      
-      max-height: 50px;
+      max-height: 40px;
       width: auto;
       justify-content: flex-end;
     }
@@ -310,12 +315,12 @@ body {
     }
 
     .paintbutton {
-      max-height: 50px;
+      max-height: 40px;
       width: auto;
     }
 
     .textbutton {
-      max-height: 50px;
+      max-height: 40px;
       width: auto;
     }
 
