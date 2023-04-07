@@ -102,6 +102,11 @@ const iconClose = document.querySelector(".ri-close-line");
 const iconClose2 = document.querySelector(".icon-close2");
 const iconClose3 = document.querySelector(".icon-close3");
 
+//share button
+
+const shareBtn = document.querySelector(".share-btn");
+const shareOptions = document.querySelector(".share-options");
+
 // classes used
 let shadowClass = "shadowKeys";
 let normalKeyClass = "normalKeys";
@@ -120,12 +125,12 @@ let selectedKeys = [];
 
 // color picker object
 const colorPicker = new iro.ColorPicker("#picker", {
-    width: 320, // COLOR PICKER 1 SIZE
+    width: 175,
     color: "#f00"
 });
 
 const colorPickerBoard = new iro.ColorPicker("#pickerBoard", {
-    width: 320,
+    width: 175,
     color: "#f00",
 });
 
@@ -362,6 +367,20 @@ colorPicker.on('color:change', function(color) {
     }
 });
 
+
+//Share buttons
+shareBtn.addEventListener("click", ()=>{
+    //console.log("hello");
+    shareOptions.classList.toggle("active");
+  });
+
 colorPickerBoard.on('color:change', (color) => {
     changeColorBoard(color.hexString);
+});
+
+//music button?
+const musicbutton = document.getElementById("musicbutton");
+musicbutton.addEventListener("click", function() {
+  const myImage = myButton.querySelector("img");
+  myImage.src = "images/music_off.png";
 });

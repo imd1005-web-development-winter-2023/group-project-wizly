@@ -50,15 +50,8 @@
           </div>
           <div class="middle">
             <div class="screen-output">
+              <p id ="textbox" class="textbox"></p>      
               <img class="monitor" src="images/old mac monitor.png" alt="monitor">
-
-              <!--issues w txtbox-->
-              <p id = "textbox" class="textbox"></p> 
-              <!--here's the one I use for my code, if u wna try using that-->
-              <!-- <div class="textbox" contenteditable="true"></div> -->
-              
-
-              <button class="clear-button" onclick="changeButton"><img id="clearbutton" src="images/clear_button.png"></button>
             </div>
             <div class="keyboard">
               <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">
@@ -70,7 +63,7 @@
           </div>
           <div class="right">
             <div class="music">
-              <button class="music-button" onclick="changeButton"><img class="musicbutton" src="images/music_on.png"></button>
+              <button class="music-button" id="musicbutton"><img id="musicbutton" class="musicbutton" src="images/music_on.png"></button>
             </div>
             <div class="mode">
               <div class="paint">
@@ -98,10 +91,12 @@
           </span>
           <h2>Switches</h2>
           <div class="buttons">
-            <button id="switch-button1">Switch1</button>
-            <button id="switch-button2">Switch2</button>
-            <button id="switch-button3">Switch3</button>
+            <button id="switch-button1">Topre</button>
+            <button id="switch-button3">Mxblack</button>
+            <button id="switch-button2">Cream</button>
+            <button class="switch-button4">Neil</button>
           </div>
+          
         </div>
       </div>
 
@@ -111,27 +106,41 @@
             <i class="ri-close-line"></i>
           </span>
           <h2>Colour</h2>
-          
-          <div id = "edit">
-            <!-- color picker container-->
-            <div id="picker" class="picker"></div>
-            <div id="pickerBoard" class = "picker"></div>
-            <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
-            <div id = "editButtons" class="editButtons">
-              <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
-              <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
-              <button type = "button" onclick = "resetColor()">RESET</button>
-              <button type = "button" onclick = "saveColor()">SAVE</button>
-              <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
+          <div class="colour-Picker">
+            <div class="keyPicker">
+              <p>Key Colour</p>
+              <div id = "edit">
+                <!-- color picker container-->
+                <div id="picker" class="picker"></div>
+               
+                <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
+                <div id = "editButtons" class="editButtons">
+                  <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
+                  <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
+                  <button type = "button" onclick = "resetColor()">RESET</button>
+                  <button type = "button" onclick = "saveColor()">SAVE</button>
+                  <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
+                </div>
+              </div>
+              
+            </div>
+            <div class="boardPicker">
+              <p>Board colour</p>
+              <div class="pickerTransf">
+                <div id="pickerBoard" class = "picker"></div>
+              </div>
+              
             </div>
           </div>
+          
+          
           <!--<div class="keyboard">
             <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">-->
             <!-- Container for keyboard overlay-->
             <!--<figure id="svg-container" class="keyboard-color">-->
               <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
             <!--</figure>-->
-          </div>
+          <!--</div>-->
         </div>
       </div>
       <div class="popup-shareContainer">
@@ -140,10 +149,24 @@
             <i class="ri-close-line"></i>
           </span>
           <h2>Share</h2>
+          <div class="wrapper">
+            <button class="share-btn">
+              <i class="ri-links-line"></i>
+            </button>
+            <div class="share-options">
+              <div class="link-container">
+                <p class="link">https</p>
+                <button class="copy-button">copy</button>
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
       <!-- Edit Dialog Box-->
       
+      <button class="clear-button" onclick="changeButton"><img id="clearbutton" src="images/clear_button.png"></button>
     </main>
     <!--<footer>
       <p>wix</p>
