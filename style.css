@@ -53,6 +53,11 @@ svg {
 /*
   PAGE / BODY
 */
+
+.cursor {
+  cursor: url('images/cursor.png'), default;
+}
+
 /*Feel free to change body, container and .app, this is just a quick template of sorts :)*/
 body {
   font-family: 'Press Start 2P', cursive;
@@ -107,7 +112,7 @@ body {
       vertical-align: top;
       text-transform: uppercase;
 
-      cursor: pointer;
+      cursor: url('images/cursor_link.png'), pointer;
 
       -webkit-touch-callout: none;
       -webkit-user-select: none;
@@ -207,6 +212,7 @@ body {
       left: 5%;
       background-color: transparent;
       border-color: transparent;
+      cursor: url('images/cursor_link.png'), pointer;
     }
 
     .monitor {
@@ -251,6 +257,7 @@ body {
       max-height: 40px;
       width: auto;
       justify-content: flex-end;
+      cursor: url('images/cursor_link.png'), pointer;
     }
 
     .svgcolors {
@@ -273,7 +280,7 @@ body {
     /* slider */
     .slider {
       position: absolute;
-      cursor: pointer;
+      cursor: url('images/cursor_link.png'), pointer;
       top: 0;
       left: 0;
       right: 0;
@@ -362,7 +369,7 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom-left-radius: 20px;
-  cursor: pointer;
+  cursor: url('images/cursor_link.png'), pointer;
   z-index: 1;
 }
 .ri-close-line:hover {
@@ -586,7 +593,7 @@ main h2 {
             font-size: 30px;
             padding-top: 2.5px;
             padding-right: 3px;
-            cursor: pointer;
+            cursor: url('images/cursor_link.png'), pointer;
             z-index: 2;
           }
           .popup-shareContainer .share-options{
@@ -639,7 +646,7 @@ main h2 {
           .copy-button{
             position: absolute;
             right: 0;
-            cursor: pointer;
+            cursor: url('images/cursor_link.png'), pointer;
             background: #000;
             color: #fff;
             border: none;
