@@ -130,7 +130,7 @@ const colorPicker = new iro.ColorPicker("#picker", {
 });
 
 const colorPickerBoard = new iro.ColorPicker("#pickerBoard", {
-    width: 320,
+    width: 175,
     color: "#f00",
 });
 

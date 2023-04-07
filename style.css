@@ -386,7 +386,6 @@ main h2 {
   .popup-switchContainer{
     display: flex;
     align-items: center;
-    
     justify-content: center;
     min-height: 100vh;
     width: 100vw;
@@ -418,6 +417,8 @@ main h2 {
         display: flex;
         flex-direction: row;
         gap: 2.5rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
       }
 
 .popup-colourContainer{
@@ -430,7 +431,7 @@ main h2 {
   z-index: 1;
   top: 0;
   left: 0;
-  /*background: rgba(0, 0, 0, 0.3);*/
+  background: rgba(0, 0, 0, 0.3);
   transform: scale(0);
 }
 
@@ -484,6 +485,49 @@ main h2 {
       }*/
 
       /*Colour picker css*/
+      .colour-Picker{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFBE00;
+        width: 100%;
+        height: 50vh;
+        margin: 20px 0px;
+      /*margin: 85px auto 0;*/
+        /*padding: 15px 0px;*/
+        border-radius: 20px;
+        flex-wrap: wrap;
+      }
+      .colour-Picker > * {
+        width: 100%;
+      }
+      
+      @media screen and (min-width: 1400px) {
+        .colour-Picker {
+          flex-direction: row;
+          height: 50vh;
+        }
+      }
+      .colour-Picker p{
+        background-color: aliceblue;
+        padding-bottom: 1rem;
+      }
+      .keyPicker {
+
+        width: 60%;
+        height: 100%;
+        background-color: #a8dadc;
+      }
+      /*.pickerTransf{
+        transform: translate(0px, -0.0rem);
+      }*/
+      .boardPicker{
+        width: 40%;
+        height: 100%;
+        background-color: #E4DCCF;
+      }
+      .picker{
+        padding: 1rem;
+      }
       .editButtons {
         display: flex;
         justify-content: flex-end;
