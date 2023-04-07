@@ -166,6 +166,18 @@ body {
       width: auto;
       z-index: 2;
     }
+
+    .leftwithtext {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .lefttext {
+      color:#1C819E;
+      font-size: small;
+    }
     
     /*Middle flex column displaying monitor and keyboard*/
     .middle{
@@ -236,8 +248,9 @@ body {
     }
 
     .music {
+      width: 100%;
       display: flex;
-      align-content: flex-end;
+      align-content: end;
     }
 
     /*Right flex with music button, and mouse*/
