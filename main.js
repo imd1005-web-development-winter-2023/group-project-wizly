@@ -90,12 +90,12 @@ audioBtn.addEventListener("click", function() {
     audioPlayer.pause();
     isPlaying = false;
     musicbutton.src="images/music_on.png";
-    audioPlayer.volume = 0.1;
+    audioPlayer.volume = 0.04;
   } else {
     audioPlayer.play();
     isPlaying = true;
     musicbutton.src="images/music_off.png";
-    audioPlayer.volume = 0.1;
+    audioPlayer.volume = 0.04;
   }
 });
 
