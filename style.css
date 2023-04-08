@@ -365,6 +365,7 @@ body {
   position: relative;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   overflow: scroll;    
+  z-index: 4000;
 }
 .content .ri-close-line{
   position: absolute;
@@ -406,6 +407,7 @@ main h2 {
     min-height: 100vh;
     width: 100vw;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.3);
@@ -604,6 +606,7 @@ main h2 {
         min-height: 100vh;
         width: 100vw;
         position: fixed;
+        z-index: 1;
         top: 0;
         left: 0;
         background: rgba(0, 0, 0, 0.3);
