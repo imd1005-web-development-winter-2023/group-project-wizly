@@ -99,6 +99,42 @@ audioBtn.addEventListener("click", function() {
   }
 });
 
+// text and draw modes
+const displayCheckbox = document.getElementById("displayCheckbox");
+
+displayCheckbox.addEventListener("change", function() {
+  if (this.checked) {
+    // text mode selected
+    document.getElementById("textbox").classList.remove("hidden");
+    document.getElementById("drawMode").classList.add("hidden");
+    // clears the drawing canvas when text selected
+    clear();
+  } else {
+    // draw mode selected
+    document.getElementById("textbox").classList.add("hidden");
+    document.getElementById("drawMode").classList.remove("hidden");
+  }
+});
+
+let isTyping = true;
+
+// p5.js stuff
+function setup() {
+  createCanvas(200, 200);
+}
+
+function draw() {
+  if (!isTyping && keyIsPressed) {
+    fill(random(255), random(255), random(255));
+    noStroke();
+    ellipse(random(width), random(height), random(50, 100));
+  }
+}
+
+displayCheckbox.addEventListener('click', function() {
+  isTyping = this.checked;
+});
+
 
 // data files
 const svgFile = "SVG/keys.svg";

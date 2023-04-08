@@ -762,3 +762,8 @@ Screen reader text utility class
   border-width: 0;}
 
   /* TEXT BOX */
+
+  /* MODE SELECT */
+  .hidden {
+    display: none;
+  }
