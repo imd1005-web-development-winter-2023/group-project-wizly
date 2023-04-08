@@ -191,7 +191,7 @@ const colorPickerBoard = new iro.ColorPicker("#pickerBoard", {
 
 
 // initialization function
-async function init() {
+async function __init() {
     svg = await getSVG(figure, svgFile);
     svgBoard = await getSVG(figure, svgBoardFile);
     svg.setAttribute("class", normalKeyClass);
@@ -246,7 +246,7 @@ function saveColor () {
         }
     }
 
-    keyColorData(boardID).color = svgBoard.getElementById(boardID).getAttribute("fill");
+    keyColorData[boardID].color = svgBoard.getAttribute("fill");
 }
 
 // toggles key shadow class On/Off
@@ -285,7 +285,7 @@ function displayEdit () {
     element = document.getElementById("edit");
     element.style.visibility == "visible" ? svg.setAttribute("class", normalKeyClass) : svg.setAttribute("class", editingModeKeyClass);
     element.style.visibility == "visible" ? removeKeyListeners() : addKeyListeners();
-    if (element.style.visibility == "visible") { selectAll(false); resetColor()};
+    if (element.style.visibility == "visible") { selectAllItems(false); resetColor()};
     element.style.visibility = element.style.visibility == "visible" ? "hidden" : "visible";
 }
 
@@ -302,7 +302,7 @@ function runonclick(elem) {
 }
 
 // selects all keys
-function selectAll(bool) {
+function selectAllItems(bool) {
     for (key in codeList) {
         if (codeList[key] == true) {
             elem = svg.getElementById(key);

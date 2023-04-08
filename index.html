@@ -37,7 +37,7 @@
   </head>
 
   <!-- INIT FUNCTION EXECUTED ON BODY LOAD-->
-  <body onload = "init()">
+  <body onload = "__init()">
     
       
     
@@ -142,8 +142,8 @@
 
                   <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
                   <div id = "editButtons" class="editButtons">
-                    <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
-                    <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
+                    <button type = "button" onclick = "selectAllItems(true)">SELECT ALL</button>
+                    <button type = "button" onclick = "selectAllItems(false)">DESELECT ALL</button>
                     <button type = "button" onclick = "resetColor()">RESET</button>
                     <button type = "button" onclick = "saveColor()">SAVE</button>
                     <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
