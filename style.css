@@ -276,7 +276,7 @@ body {
     .musicbutton {      
       max-height: 40px;
       width: auto;
-      /*justify-content: flex-end;*/
+      /*align-items: flex-end;*/
       cursor: url('images/cursor_link.png'), pointer;
     }
 
@@ -576,7 +576,7 @@ main h2 {
         gap: 1rem;
         font-size: 0.5vw;
         margin: 8px 0px;
-        cursor: url('images/cursor_link.png'), pointer;
+        /*cursor: url('images/cursor_link.png'), pointer;*/
       }
       button {
         cursor: url('images/cursor_link.png'), pointer;
