@@ -767,3 +767,8 @@ Screen reader text utility class
   .hidden {
     display: none;
   }
+
+  /* PAINT BOX */
+  canvas {
+    margin: auto;
+  }

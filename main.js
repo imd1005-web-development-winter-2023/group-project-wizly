@@ -119,6 +119,7 @@ displayCheckbox.addEventListener("change", function() {
 let isTyping = true;
 
 // p5.js stuff
+
 function setup() {
   createCanvas(200, 200);
 }
