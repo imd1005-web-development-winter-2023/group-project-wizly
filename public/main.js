@@ -438,27 +438,4 @@ colorPickerBoard.on('color:change', (color) => {
 musicbutton.addEventListener("click", function() {
   const myImage = myButton.querySelector("img");
   myImage.src = "images/music_off.png";
-<<<<<<< HEAD:public/main.js
-});
-
-document.getElementById("share-btn").addEventListener('click', async() => {
-    try {
-        const res = await fetch('JSON/data.JSON');
-        const jsonData = await res.json();
-        const options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(jsonData)
-        };
-        const result = await fetch('/submitdata', options);
-        console.log(result);
-    } catch (err) {
-        console.error(err);
-    }
-
-})
-=======
 });*/
->>>>>>> main:main.js
