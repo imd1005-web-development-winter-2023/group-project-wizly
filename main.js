@@ -64,23 +64,7 @@ fetch('JSON/keydb.json')
     });
   });
 
-  // get the textbox element
-const textbox = document.querySelector('.textbox');
-const clearBtn = document.getElementById("clearbutton");
-
-// listen for input events on the textbox
-textbox.addEventListener('input', function() {
-  // get the text content of the textbox
-  const text = textbox.textContent;
-
-  console.log(text);
-});
-// clears textbox content
-clearBtn.addEventListener('click', function() {
-  textbox.textContent = '';
-});
-
-// music player
+  // music player
 const audioBtn = document.getElementById("music-button");
 const audioPlayer = document.getElementById("music-player");
 let isPlaying = false;
@@ -97,6 +81,22 @@ audioBtn.addEventListener("click", function() {
     musicbutton.src="images/music_off.png";
     audioPlayer.volume = 0.04;
   }
+});
+
+  // get the textbox element
+const textbox = document.querySelector('.textbox');
+const clearBtn = document.getElementById("clearbutton");
+
+// listen for input events on the textbox
+textbox.addEventListener('input', function() {
+  // get the text content of the textbox
+  const text = textbox.textContent;
+
+  console.log(text);
+});
+// clears textbox content
+clearBtn.addEventListener('click', function() {
+  textbox.textContent = '';
 });
 
 // text and draw modes
@@ -434,8 +434,8 @@ colorPickerBoard.on('color:change', (color) => {
 });
 
 //music button?
-const musicbutton = document.getElementById("musicbutton");
+/*const musicbutton = document.getElementById("musicbutton");
 musicbutton.addEventListener("click", function() {
   const myImage = myButton.querySelector("img");
   myImage.src = "images/music_off.png";
-});
+});*/
