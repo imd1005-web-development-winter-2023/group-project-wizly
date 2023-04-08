@@ -361,7 +361,6 @@ btPopupSwitch.addEventListener("click", ()=>{
     //console.log("hello");
     popupShareWrapper.classList.remove("active-popup");
   });
-
 // event listener for color wheel change
 colorPicker.on('color:change', function(color) {
     for (var i = 0; i < selectedKeys.length; i++) {
