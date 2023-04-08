@@ -248,9 +248,8 @@ body {
     }
 
     .music {
-      width: 100%;
       display: flex;
-      align-content: end;
+      align-content: flex-end;
     }
 
     /*Right flex with music button, and mouse*/
@@ -276,10 +275,10 @@ body {
     .musicbutton {      
       max-height: 40px;
       width: auto;
-      /*align-items: flex-end;*/
+      /*justify-content: flex-end;*/
       cursor: url('images/cursor_link.png'), pointer;
     }
-
+    
     .svgcolors {
       width: 100%;
     }
