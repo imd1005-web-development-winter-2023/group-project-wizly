@@ -75,11 +75,12 @@ textbox.addEventListener('input', function() {
 
   console.log(text);
 });
-
-
+// clears textbox content
 clearBtn.addEventListener('click', function() {
   textbox.textContent = '';
 });
+
+
 
 
 // data files
@@ -289,6 +290,7 @@ function removeKeyListeners() {
     }
 }
 
+// typing *********************************************************
 function insertText(char) {
 
     p = document.getElementById("textbox");
