@@ -53,6 +53,11 @@ svg {
 /*
   PAGE / BODY
 */
+
+.cursor {
+  cursor: url('images/cursor.png'), default;
+}
+
 /*Feel free to change body, container and .app, this is just a quick template of sorts :)*/
 body {
   font-family: 'Press Start 2P', cursive;
@@ -107,7 +112,7 @@ body {
       vertical-align: top;
       text-transform: uppercase;
 
-      cursor: pointer;
+      cursor: url('images/cursor_link.png'), pointer;
 
       -webkit-touch-callout: none;
       -webkit-user-select: none;
@@ -161,10 +166,21 @@ body {
       width: auto;
       z-index: 2;
     }
+
+    .leftwithtext {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .lefttext {
+      color:#1C819E;
+      font-size: small;
+    }
     
     /*Middle flex column displaying monitor and keyboard*/
     .middle{
-      background-color: red;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
@@ -173,27 +189,34 @@ body {
       height: 100%;
     }
 
+    #textbox {
+      overflow: scroll;
+    }
+
     .textbox {
       position: absolute;
-      width: 50%;
-      left: 30%;
-      top: 0;
-      background-color: blue;
+      width: 70%;
+      height: 45%;
+      left: 15%;
+      top: 15%;
       color:#E6E6D4;
       font-family: 'Press Start 2P', cursive;
       overflow: scroll;
     }
 
-    p {
-      border: none;
+    .screen-output {
+      position: relative;
+      top: 0px;
+      left: 0px;
     }
 
     .clear-button {
       position: absolute;
-      top: 300px;
-      left: 10px;
+      top: 60%;
+      left: 5%;
       background-color: transparent;
       border-color: transparent;
+      cursor: url('images/cursor_link.png'), pointer;
     }
 
     .monitor {
@@ -216,9 +239,10 @@ body {
       top: 0;
     }
 
-    /*.music {
-      border: 1px solid blue;
-    }*/
+    .music {
+      display: flex;
+      align-content: flex-end;
+    }
 
     /*Right flex with music button, and mouse*/
     .right {
@@ -226,6 +250,13 @@ body {
       flex-direction: column;
       height: 100%;
       justify-content: space-between;
+      
+      /*align-items: flex-end;*/
+    }
+    .rightbuttons{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
 
     .music-button {
@@ -234,11 +265,12 @@ body {
     }
 
     .musicbutton {      
-      max-height: 50px;
+      max-height: 40px;
       width: auto;
-      justify-content: flex-end;
+      /*justify-content: flex-end;*/
+      cursor: url('images/cursor_link.png'), pointer;
     }
-
+    
     .svgcolors {
       width: 100%;
     }
@@ -259,7 +291,7 @@ body {
     /* slider */
     .slider {
       position: absolute;
-      cursor: pointer;
+      cursor: url('images/cursor_link.png'), pointer;
       top: 0;
       left: 0;
       right: 0;
@@ -301,12 +333,12 @@ body {
     }
 
     .paintbutton {
-      max-height: 50px;
+      max-height: 40px;
       width: auto;
     }
 
     .textbutton {
-      max-height: 50px;
+      max-height: 40px;
       width: auto;
     }
 
@@ -333,6 +365,7 @@ body {
   position: relative;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   overflow: scroll;    
+  z-index: 4000;
 }
 .content .ri-close-line{
   position: absolute;
@@ -348,7 +381,7 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom-left-radius: 20px;
-  cursor: pointer;
+  cursor: url('images/cursor_link.png'), pointer;
   z-index: 1;
 }
 .ri-close-line:hover {
@@ -374,6 +407,7 @@ main h2 {
     min-height: 100vh;
     width: 100vw;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.3);
@@ -403,7 +437,21 @@ main h2 {
         gap: 2.5rem;
         justify-content: space-between;
         flex-wrap: wrap;
+        
+        /*cursor: pointer;*/
       }
+      .switch-btn{
+        cursor: url('images/cursor_link.png'), pointer;
+      }
+      .switch-btn:hover{
+        background-color: #a8dadc;
+        color: #003049;
+      }
+      .switch-btn:focus{
+        background-color: #a8dadc;
+        color: #003049;
+      }
+
 
 .popup-colourContainer{
   display: flex;
@@ -415,7 +463,7 @@ main h2 {
   z-index: 1;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  /*background: rgba(0, 0, 0, 0.1);*/
   transform: scale(0);
 }
 
@@ -472,7 +520,7 @@ main h2 {
       .colour-Picker{
         display: flex;
         flex-direction: column;
-        background-color: #FFBE00;
+        /*background-color: #FFBE00;*/
         width: 100%;
         height: 50vh;
         margin: 20px 0px;
@@ -499,7 +547,8 @@ main h2 {
 
         width: 60%;
         height: 100%;
-        background-color: #a8dadc;
+        /*background-color: #a8dadc;*/
+        background: rgba(0, 0, 0, 0.3);
       }
       /*.pickerTransf{
         transform: translate(0px, -0.0rem);
@@ -507,7 +556,8 @@ main h2 {
       .boardPicker{
         width: 40%;
         height: 100%;
-        background-color: #E4DCCF;
+        /*background-color: #E4DCCF;*/
+        background: rgba(255, 255, 255, 0.1);
       }
       .picker{
         padding: 1rem;
@@ -519,6 +569,10 @@ main h2 {
         gap: 1rem;
         font-size: 0.5vw;
         margin: 8px 0px;
+        /*cursor: url('images/cursor_link.png'), pointer;*/
+      }
+      button {
+        cursor: url('images/cursor_link.png'), pointer;
       }
       .popup-colourContainer .keyboard {
         display: flex;
@@ -552,6 +606,7 @@ main h2 {
         min-height: 100vh;
         width: 100vw;
         position: fixed;
+        z-index: 1;
         top: 0;
         left: 0;
         background: rgba(0, 0, 0, 0.3);
@@ -572,9 +627,13 @@ main h2 {
             font-size: 30px;
             padding-top: 2.5px;
             padding-right: 3px;
-            cursor: pointer;
+            cursor: url('images/cursor_link.png'), pointer;
             z-index: 2;
           }
+          .share-btn:hover{
+            background-color: #a8dadcd2;
+            color: #003049;}
+
           .popup-shareContainer .share-options{
             display: flex;
             flex-direction: column;
@@ -625,7 +684,7 @@ main h2 {
           .copy-button{
             position: absolute;
             right: 0;
-            cursor: pointer;
+            cursor: url('images/cursor_link.png'), pointer;
             background: #000;
             color: #fff;
             border: none;
@@ -698,3 +757,18 @@ Screen reader text utility class
   border-width: 0;}
 
   /* TEXT BOX */
+
+  /* MODE SELECT */
+  .hidden {
+    display: none;
+  }
+
+  /* PAINT BOX */
+  canvas {
+    margin: auto;
+    position: absolute;
+    width: 70%;
+    height: 45%;
+    left: 41%;
+    top: 14%;
+  }

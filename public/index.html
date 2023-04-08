@@ -37,111 +37,81 @@
   </head>
 
   <!-- INIT FUNCTION EXECUTED ON BODY LOAD-->
-  <body onload = "init()">
+  <body onload = "__init()">
+    
+      
+    
     <main>
-      <div class="container">
-        <div class="app">
-          <div class="left">
-            <button class="switch-button">Switch</button>
-
-            <!-- Displays Edit Dialog-->
-            <button class="colour-button" onclick = "displayEdit()">Colour</button>
-            <button class="share-button">Share</button>
-          </div>
-          <div class="middle">
-            <div class="screen-output">
-              <p id ="textbox" class="textbox"></p>      
-              <img class="monitor" src="images/old mac monitor.png" alt="monitor">
-            </div>
-            <div class="keyboard">
-              <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">
-              <!-- Container for keyboard overlay-->
-              <figure id="svg-container" class="keyboard-color">
-                <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
-              </figure>
-            </div>
-          </div>
-          <div class="right">
-            <div class="music">
-              <button class="music-button" id="musicbutton"><img id="musicbutton" class="musicbutton" src="images/music_on.png"></button>
-            </div>
-            <div class="mode">
-              <div class="paint">
-                <img class="paintbutton" src="images/paint.png">
+      <div class="cursor">
+        <div class="container">
+          <div class="app">
+            <div class="leftwithtext">
+              <div class="left">
+                <button class="switch-button">Switch</button>
+    
+                <!-- Displays Edit Dialog-->
+                <button class="colour-button" onclick = "displayEdit()">Colour</button>
+                <button class="share-button">Share</button>
               </div>
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider"></span>
-              </label>
-              <div class="text">
-                <img class="textbutton" src="images/text.png">
+              <div class="lefttext">
+                <p>by Wizly</p>
+                <p>© 2023</p>
               </div>
             </div>
+            
+            <div class="middle">
+              <div class="screen-output">
+                <p id ="textbox" class="textbox"></p>      
+                <div class="artbox"></div>
+                <img class="monitor" src="images/old mac monitor.png" alt="monitor">
+      
+                <div class="box"></div>
+                <!-- txtbox -->
+                <p id ="textbox" class="textbox"></p> 
+                <!-- draw mode -->
+                <div id="drawMode" class="artbox"></div>
+                
+                <button class="clear-button" onclick="changeButton"><img id="clearbutton" src="images/clear_button.png"></button>
+              </div>
+              <div class="keyboard">
+                <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">
+                <!-- Container for keyboard overlay-->
+                <figure id="svg-container" class="keyboard-color">
+                  <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
+                </figure>
+              </div>
+            </div>
+            <div class="right">
+              <div class="rightbuttons">
+                <div class="music">
+                  <button class="music-button" id="music-button"><img id="musicbutton" class="musicbutton" src="images/music_on.png"></button>
+                  <audio id="music-player" src="audio/lofi.mp3" loop></audio>
+                </div>
 
-            <img class="mouse" src="images/mouse.png" alt="mouse">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="popup-switchContainer">
-        <div class="content">
-          <span class="icon-close">
-            <i class="ri-close-line"></i>
-          </span>
-          <h2>Switches</h2>
-          <div class="buttons">
-            <button id="switch-button1">Topre</button>
-            <button id="switch-button3">Mxblack</button>
-            <button id="switch-button2">Cream</button>
-            <button class="switch-button4">Neil</button>
-          </div>
-          
-        </div>
-      </div>
-
-      <div class="popup-colourContainer">
-        <div class="content">
-          <span class="icon-close2" onclick = "displayEdit()">
-            <i class="ri-close-line"></i>
-          </span>
-          <h2>Colour</h2>
-          <div class="colour-Picker">
-            <div class="keyPicker">
-              <p>Key Colour</p>
-              <div id = "edit">
-                <!-- color picker container-->
-                <div id="picker" class="picker"></div>
-               
-                <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
-                <div id = "editButtons" class="editButtons">
-                  <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
-                  <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
-                  <button type = "button" onclick = "resetColor()">RESET</button>
-                  <button type = "button" onclick = "saveColor()">SAVE</button>
-                  <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
+                <!-- text and paint selector-->
+                <div class="mode">
+                  <div class="paint">
+                    <img class="paintbutton" src="images/paint.png">
+                  </div>
+                  
+                  <label class="switch">
+                    <input type="checkbox" id="displayCheckbox" checked>
+                    <span class="slider"></span>
+                  </label>
+    
+                  <div class="text">
+                    <img class="textbutton" src="images/text.png">
+                  </div>
                 </div>
               </div>
               
-            </div>
-            <div class="boardPicker">
-              <p>Board colour</p>
-              <div class="pickerTransf">
-                <div id="pickerBoard" class = "picker"></div>
-              </div>
-              
+
+              <img class="mouse" src="images/mouse.png" alt="mouse">
+
             </div>
           </div>
-          
-          
-          <!--<div class="keyboard">
-            <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">-->
-            <!-- Container for keyboard overlay-->
-            <!--<figure id="svg-container" class="keyboard-color">-->
-              <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
-            <!--</figure>-->
-          <!--</div>-->
         </div>
+<<<<<<< HEAD:public/index.html
       </div>
       <div class="popup-shareContainer">
         <div class="content">
@@ -157,17 +127,89 @@
               <div class="link-container">
                 <p class="link">https</p>
                 <button class="copy-button">copy</button>
+=======
+>>>>>>> main:index.html
 
-              </div>
+        <div class="popup-switchContainer">
+          <div class="content">
+            <span class="icon-close">
+              <i class="ri-close-line"></i>
+            </span>
+            <h2>Switches</h2>
+            <div class="buttons">
+              <button id="switch-button1" class="switch-btn" autofocus>Topre</button>
+              <button id="switch-button3" class="switch-btn">Mxblack</button>
+              <button id="switch-button2" class="switch-btn">Cream</button>
+              <button id="switch-button4" class="switch-btn">Neil</button>
             </div>
-
           </div>
         </div>
-      </div>
+
+        <div class="popup-colourContainer">
+          <div class="content">
+            <span class="icon-close2" onclick = "displayEdit()">
+              <i class="ri-close-line"></i>
+            </span>
+            <h2>Colour</h2>
+            <div class="colour-Picker">
+              <div class="keyPicker">
+                <p>Key Colour</p>
+                <div id = "edit">
+                  <!-- color picker container-->
+                  <div id="picker" class="picker"></div>
+
+                  <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
+                  <div id = "editButtons" class="editButtons">
+                    <button type = "button" onclick = "selectAllItems(true)">SELECT ALL</button>
+                    <button type = "button" onclick = "selectAllItems(false)">DESELECT ALL</button>
+                    <button type = "button" onclick = "resetColor()">RESET</button>
+                    <button type = "button" onclick = "saveColor()">SAVE</button>
+                    <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
+                  </div>
+                </div>
+              </div>
+
+              <div class="boardPicker">
+                <p>Board colour</p>
+                <div class="pickerTransf">
+                  <div id="pickerBoard" class = "picker"></div>
+                </div>
+              </div>
+            </div>
+            <!--<div class="keyboard">
+              <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">-->
+              <!-- Container for keyboard overlay-->
+              <!--<figure id="svg-container" class="keyboard-color">-->
+                <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
+              <!--</figure>-->
+            </div>
+          </div>
+        </div>
+        <div class="popup-shareContainer">
+          <div class="content">
+            <span class="icon-close3">
+              <i class="ri-close-line"></i>
+            </span>
+            <h2>Share</h2>
+            <div class="wrapper">
+              <button class="share-btn">
+                <i class="ri-links-line"></i>
+              </button>
+              <div class="share-options">
+                <div class="link-container">
+                  <p class="link">https</p>
+                  <button class="copy-button">copy</button>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       <!-- Edit Dialog Box-->
-      
-      <button class="clear-button" onclick="changeButton"><img id="clearbutton" src="images/clear_button.png"></button>
+      </div>
     </main>
+    
     <!--<footer>
       <p>wix</p>
     </footer>-->

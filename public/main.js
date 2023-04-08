@@ -64,6 +64,25 @@ fetch('JSON/keydb.json')
     });
   });
 
+  // music player
+const audioBtn = document.getElementById("music-button");
+const audioPlayer = document.getElementById("music-player");
+let isPlaying = false;
+
+audioBtn.addEventListener("click", function() {
+  if (isPlaying) {
+    audioPlayer.pause();
+    isPlaying = false;
+    musicbutton.src="images/music_on.png";
+    audioPlayer.volume = 0.04;
+  } else {
+    audioPlayer.play();
+    isPlaying = true;
+    musicbutton.src="images/music_off.png";
+    audioPlayer.volume = 0.04;
+  }
+});
+
   // get the textbox element
 const textbox = document.querySelector('.textbox');
 const clearBtn = document.getElementById("clearbutton");
@@ -75,10 +94,46 @@ textbox.addEventListener('input', function() {
 
   console.log(text);
 });
-
-
+// clears textbox content
 clearBtn.addEventListener('click', function() {
   textbox.textContent = '';
+});
+
+// text and draw modes
+const displayCheckbox = document.getElementById("displayCheckbox");
+
+displayCheckbox.addEventListener("change", function() {
+  if (this.checked) {
+    // text mode selected
+    document.getElementById("textbox").classList.remove("hidden");
+    document.getElementById("drawMode").classList.add("hidden");
+    // clears the drawing canvas when text selected
+    clear();
+  } else {
+    // draw mode selected
+    document.getElementById("textbox").classList.add("hidden");
+    document.getElementById("drawMode").classList.remove("hidden");
+  }
+});
+
+let isTyping = true;
+
+// p5.js stuff
+
+function setup() {
+  createCanvas(250, 175);
+}
+
+function draw() {
+  if (!isTyping && keyIsPressed) {
+    fill(random(255), random(255), random(255));
+    noStroke();
+    ellipse(random(width), random(height), random(50, 100));
+  }
+}
+
+displayCheckbox.addEventListener('click', function() {
+  isTyping = this.checked;
 });
 
 
@@ -136,7 +191,7 @@ const colorPickerBoard = new iro.ColorPicker("#pickerBoard", {
 
 
 // initialization function
-async function init() {
+async function __init() {
     svg = await getSVG(figure, svgFile);
     svgBoard = await getSVG(figure, svgBoardFile);
     svg.setAttribute("class", normalKeyClass);
@@ -191,7 +246,7 @@ function saveColor () {
         }
     }
 
-    keyColorData(boardID).color = svgBoard.getElementById(boardID).getAttribute("fill");
+    keyColorData[boardID].color = svgBoard.getAttribute("fill");
 }
 
 // toggles key shadow class On/Off
@@ -230,7 +285,7 @@ function displayEdit () {
     element = document.getElementById("edit");
     element.style.visibility == "visible" ? svg.setAttribute("class", normalKeyClass) : svg.setAttribute("class", editingModeKeyClass);
     element.style.visibility == "visible" ? removeKeyListeners() : addKeyListeners();
-    if (element.style.visibility == "visible") { selectAll(false); resetColor()};
+    if (element.style.visibility == "visible") { selectAllItems(false); resetColor()};
     element.style.visibility = element.style.visibility == "visible" ? "hidden" : "visible";
 }
 
@@ -247,7 +302,7 @@ function runonclick(elem) {
 }
 
 // selects all keys
-function selectAll(bool) {
+function selectAllItems(bool) {
     for (key in codeList) {
         if (codeList[key] == true) {
             elem = svg.getElementById(key);
@@ -289,6 +344,7 @@ function removeKeyListeners() {
     }
 }
 
+// typing *********************************************************
 function insertText(char) {
 
     p = document.getElementById("textbox");
@@ -359,7 +415,6 @@ btPopupSwitch.addEventListener("click", ()=>{
     //console.log("hello");
     popupShareWrapper.classList.remove("active-popup");
   });
-
 // event listener for color wheel change
 colorPicker.on('color:change', function(color) {
     for (var i = 0; i < selectedKeys.length; i++) {
@@ -379,10 +434,11 @@ colorPickerBoard.on('color:change', (color) => {
 });
 
 //music button?
-const musicbutton = document.getElementById("musicbutton");
+/*const musicbutton = document.getElementById("musicbutton");
 musicbutton.addEventListener("click", function() {
   const myImage = myButton.querySelector("img");
   myImage.src = "images/music_off.png";
+<<<<<<< HEAD:public/main.js
 });
 
 document.getElementById("share-btn").addEventListener('click', async() => {
@@ -403,3 +459,6 @@ document.getElementById("share-btn").addEventListener('click', async() => {
     }
 
 })
+=======
+});*/
+>>>>>>> main:main.js
