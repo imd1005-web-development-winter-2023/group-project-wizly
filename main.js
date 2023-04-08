@@ -80,7 +80,24 @@ clearBtn.addEventListener('click', function() {
   textbox.textContent = '';
 });
 
+// music player
+const audioBtn = document.getElementById("music-button");
+const audioPlayer = document.getElementById("music-player");
+let isPlaying = false;
 
+audioBtn.addEventListener("click", function() {
+  if (isPlaying) {
+    audioPlayer.pause();
+    isPlaying = false;
+    musicbutton.src="images/music_on.png";
+    audioPlayer.volume = 0.1;
+  } else {
+    audioPlayer.play();
+    isPlaying = true;
+    musicbutton.src="images/music_off.png";
+    audioPlayer.volume = 0.1;
+  }
+});
 
 
 // data files

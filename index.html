@@ -38,28 +38,23 @@
 
   <!-- INIT FUNCTION EXECUTED ON BODY LOAD-->
   <body onload = "init()">
-    <div class="cursor">
     <main>
       <div class="container">
         <div class="app">
-          <div class="leftwithtext">
-            <div class="left">
-              <button class="switch-button">Switch</button>
+          <div class="left">
+            <button class="switch-button">Switch</button>
 
-              <!-- Displays Edit Dialog-->
-              <button class="colour-button" onclick = "displayEdit()">Colour</button>
-              <button class="share-button">Share</button>
-            </div>
-            <div class="lefttext">
-              <p>by Wizly</p>
-              <p>© 2023</p>
-            </div>
+            <!-- Displays Edit Dialog-->
+            <button class="colour-button" onclick = "displayEdit()">Colour</button>
+            <button class="share-button">Share</button>
           </div>
           <div class="middle">
             <div class="screen-output">
-              <p id ="textbox" class="textbox"></p>      
-              <div class="artbox"></div>
               <img class="monitor" src="images/old mac monitor.png" alt="monitor">
+              <!--issues w txtbox-->
+              <div class="box"></div>
+              <p id ="textbox" class="textbox"></p> 
+              
               <button class="clear-button" onclick="changeButton"><img id="clearbutton" src="images/clear_button.png"></button>
             </div>
             <div class="keyboard">
@@ -71,21 +66,24 @@
             </div>
           </div>
           <div class="right">
-            <div class="rightbuttons">
-              <div class="music">
-                <button class="music-button" id="musicbutton"><img id="musicbutton" class="musicbutton" src="images/music_on.png"></button>
+            <div class="music">
+              <button class="music-button" id="music-button"><img id="musicbutton" class="musicbutton" src="images/music_on.png"></button>
+              <audio id="music-player" src="audio/lofi.mp3"></audio>
+            </div>
+            <!-- text and paint selector-->
+
+            <div class="mode">
+              <div class="paint">
+                <img class="paintbutton" src="images/paint.png">
               </div>
-              <div class="mode">
-                <div class="paint">
-                  <img class="paintbutton" src="images/paint.png">
-                </div>
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider"></span>
-                </label>
-                <div class="text">
-                  <img class="textbutton" src="images/text.png">
-                </div>
+              
+              <label class="switch">
+                <input type="checkbox" id="displayCheckbox" checked>
+                <span class="slider"></span>
+              </label>
+
+              <div class="text">
+                <img class="textbutton" src="images/text.png">
               </div>
             </div>
 
@@ -107,7 +105,8 @@
             <button id="switch-button2" class="switch-btn">Cream</button>
             <button id="switch-button4" class="switch-btn">Neil</button>
           </div>
-          
+          <br/>
+          <button class="switch-button4">Neil</button>
         </div>
       </div>
 
@@ -117,41 +116,26 @@
             <i class="ri-close-line"></i>
           </span>
           <h2>Colour</h2>
-          <div class="colour-Picker">
-            <div class="keyPicker">
-              <p>Key Colour</p>
-              <div id = "edit">
-                <!-- color picker container-->
-                <div id="picker" class="picker"></div>
-               
-                <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
-                <div id = "editButtons" class="editButtons">
-                  <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
-                  <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
-                  <button type = "button" onclick = "resetColor()">RESET</button>
-                  <button type = "button" onclick = "saveColor()">SAVE</button>
-                  <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
-                </div>
-              </div>
-              
-            </div>
-            <div class="boardPicker">
-              <p>Board colour</p>
-              <div class="pickerTransf">
-                <div id="pickerBoard" class = "picker"></div>
-              </div>
-              
+          <div id = "edit">
+            <!-- color picker container-->
+            <div id="picker" class="picker"></div>
+            <div id="pickerBoard" class = "picker"></div>
+            <!-- edit buttons container -- DO NOT CHANGE onclick functions-->
+            <div id = "editButtons" class="editButtons">
+              <button type = "button" onclick = "selectAll(true)">SELECT ALL</button>
+              <button type = "button" onclick = "selectAll(false)">DESELECT ALL</button>
+              <button type = "button" onclick = "resetColor()">RESET</button>
+              <button type = "button" onclick = "saveColor()">SAVE</button>
+              <!--<button type = "button" onclick = "displayEdit()">CLOSE</button>-->
             </div>
           </div>
-          
-          
           <!--<div class="keyboard">
             <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">-->
             <!-- Container for keyboard overlay-->
             <!--<figure id="svg-container" class="keyboard-color">-->
               <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
             <!--</figure>-->
-          <!--</div>-->
+          </div>
         </div>
       </div>
       <div class="popup-shareContainer">
@@ -176,7 +160,7 @@
         </div>
       </div>
       <!-- Edit Dialog Box-->
-      </div>
+      
     </main>
     <!--<footer>
       <p>wix</p>
