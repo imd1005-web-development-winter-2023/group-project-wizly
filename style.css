@@ -204,14 +204,6 @@ body {
       overflow: scroll;
     }
 
-    .artbox {
-      position: absolute;
-      width: 70%;
-      height: 45%;
-      left: 15%;
-      top: 15%;
-    }
-
     .screen-output {
       position: relative;
       top: 0px;
@@ -771,4 +763,9 @@ Screen reader text utility class
   /* PAINT BOX */
   canvas {
     margin: auto;
+    position: absolute;
+    width: 70%;
+    height: 45%;
+    left: 41%;
+    top: 14%;
   }
