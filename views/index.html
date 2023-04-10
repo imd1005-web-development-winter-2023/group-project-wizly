@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./public/reset.css" />
 
     <!-- This is where all of our awesome CSS code goes -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./public/style.css" />
 
     <!--Some fonts used in website-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <!-- Set the Favicon  -->
-    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+    <link rel="icon" href="./public/images/favicon/rocket.svg" type="image/svg+xml" />
 
     <!--Icons-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -63,7 +63,7 @@
               <div class="screen-output">
                 <p id ="textbox" class="textbox"></p>      
                 <div class="artbox"></div>
-                <img class="monitor" src="images/old mac monitor.png" alt="monitor">
+                <img class="monitor" src="./public/images/old mac monitor.png" alt="monitor">
       
                 <div class="box"></div>
                 <!-- txtbox -->
@@ -71,10 +71,10 @@
                 <!-- draw mode -->
                 <div id="drawMode" class="artbox"></div>
                 
-                <button class="clear-button" onclick="changeButton"><img id="clearbutton" src="images/clear_button.png"></button>
+                <button class="clear-button" onclick="changeButton"><img id="clearbutton" src="./public/images/clear_button.png"></button>
               </div>
               <div class="keyboard">
-                <img class="keyboard-layout" width = "100%" height="auto" src="images/keyboard.png" alt="keyboard">
+                <img class="keyboard-layout" width = "100%" height="auto" src="./public/images/keyboard.png" alt="keyboard">
                 <!-- Container for keyboard overlay-->
                 <figure id="svg-container" class="keyboard-color">
                   <!-- SVG WILL GO HERE WITH JAVASCRIPT-->
@@ -84,14 +84,14 @@
             <div class="right">
               <div class="rightbuttons">
                 <div class="music">
-                  <button class="music-button" id="music-button"><img id="musicbutton" class="musicbutton" src="images/music_on.png"></button>
-                  <audio id="music-player" src="audio/lofi.mp3" loop></audio>
+                  <button class="music-button" id="music-button"><img id="musicbutton" class="musicbutton" src="./public/images/music_on.png"></button>
+                  <audio id="music-player" src="./public/audio/lofi.mp3" loop></audio>
                 </div>
 
                 <!-- text and paint selector-->
                 <div class="mode">
                   <div class="paint">
-                    <img class="paintbutton" src="images/paint.png">
+                    <img class="paintbutton" src="./public/images/paint.png">
                   </div>
                   
                   <label class="switch">
@@ -100,18 +100,17 @@
                   </label>
     
                   <div class="text">
-                    <img class="textbutton" src="images/text.png">
+                    <img class="textbutton" src="./public/images/text.png">
                   </div>
                 </div>
               </div>
               
 
-              <img class="mouse" src="images/mouse.png" alt="mouse">
+              <img class="mouse" src="./public/images/mouse.png" alt="mouse">
 
             </div>
           </div>
         </div>
-<<<<<<< HEAD:public/index.html
       </div>
       <div class="popup-shareContainer">
         <div class="content">
@@ -127,8 +126,6 @@
               <div class="link-container">
                 <p class="link">https</p>
                 <button class="copy-button">copy</button>
-=======
->>>>>>> main:index.html
 
         <div class="popup-switchContainer">
           <div class="content">
@@ -215,6 +212,6 @@
     </footer>-->
 
     <!-- This is where we add our awesome JavaScript code -->
-    <script src="./main.js"></script>
+    <script src="./public/main.js"></script>
   </body>
 </html>

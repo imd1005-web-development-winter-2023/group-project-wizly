@@ -1,6 +1,6 @@
 /* key presses -> audio */
 // Load the JSON data from a file
-fetch('JSON/keydb.json')
+fetch('./public/JSON/keydb.json')
   .then(response => response.json())
   .then(keyData => {
     // Create an object to map key codes to audio files
@@ -73,12 +73,12 @@ audioBtn.addEventListener("click", function() {
   if (isPlaying) {
     audioPlayer.pause();
     isPlaying = false;
-    musicbutton.src="images/music_on.png";
+    musicbutton.src="./public/images/music_on.png";
     audioPlayer.volume = 0.04;
   } else {
     audioPlayer.play();
     isPlaying = true;
-    musicbutton.src="images/music_off.png";
+    musicbutton.src="./public/images/music_off.png";
     audioPlayer.volume = 0.04;
   }
 });
@@ -138,10 +138,10 @@ displayCheckbox.addEventListener('click', function() {
 
 
 // data files
-const svgFile = "SVG/keys.svg";
-const svgBoardFile = "SVG/board.svg";
-const listFile = "JSON/codes.JSON";
-const dataFile = "JSON/data.JSON";
+const svgFile = "./public/SVG/keys.svg";
+const svgBoardFile = "./public/SVG/board.svg";
+const listFile = "./public/JSON/codes.JSON";
+const dataFile = "./public/JSON/data.JSON";
 
 // parent container
 const figure = document.getElementById("svg-container");
@@ -382,10 +382,10 @@ document.addEventListener("keyup", function(event){
 
 //
 function changeImage() {
-    if (document.getElementById("clearbutton").src == "images/clear_button.png"){
-        document.getElementById("clearbutton").src = "images/clear_button_clicked.png";
+    if (document.getElementById("clearbutton").src == "./public/images/clear_button.png"){
+        document.getElementById("clearbutton").src = "./public/images/clear_button_clicked.png";
     } else {
-        document.getElementById("clearbutton").src = "images/clear_button.png";
+        document.getElementById("clearbutton").src = "./public/images/clear_button.png";
     }
 }
 
@@ -435,7 +435,7 @@ colorPickerBoard.on('color:change', (color) => {
 
 document.getElementById("share-btn").addEventListener('click', async () => {
   try {
-    const response = await fetch('JSON/data.JSON');
+    const response = await fetch('./public/JSON/data.JSON');
     const data = await response.json();
 
     const options = {
