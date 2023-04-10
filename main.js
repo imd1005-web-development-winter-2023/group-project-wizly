@@ -147,15 +147,15 @@ const dataFile = "JSON/data.JSON";
 const figure = document.getElementById("svg-container");
 
 // used for button popup
-const btPopupSwitch = document.querySelector(".switch-button");
-const btPopupColour = document.querySelector(".colour-button");
-const btPopupShare = document.querySelector(".share-button");
-const popupSwitchWrapper = document.querySelector(".popup-switchContainer");
-const popupColourWrapper = document.querySelector(".popup-colourContainer");
-const popupShareWrapper = document.querySelector(".popup-shareContainer");
-const iconClose = document.querySelector(".ri-close-line");
-const iconClose2 = document.querySelector(".icon-close2");
-const iconClose3 = document.querySelector(".icon-close3");
+const btPopupSwitch = document.getElementById("switch-button"); //
+const btPopupColour = document.getElementById("colour-button"); // 
+const btPopupShare = document.getElementById("share-button"); //
+const popupSwitchWrapper = document.getElementById("popup-switchContainer"); //
+const popupColourWrapper = document.getElementById("popup-colourContainer"); //
+const popupShareWrapper = document.getElementById("popup-shareContainer"); //
+const iconClose = document.getElementById("ri-close-line"); //
+const iconClose2 = document.getElementById("icon-close2"); //
+const iconClose3 = document.getElementById("icon-close3"); //
 
 //share button
 
