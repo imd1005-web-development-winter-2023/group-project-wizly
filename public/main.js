@@ -402,30 +402,33 @@ function changeImage() {
     }
 }
 
-btPopupSwitch.addEventListener("click", ()=>{
+  btPopupSwitch.addEventListener("click", ()=>{
+    console.log(popupSwitchWrapper);
     popupSwitchWrapper.classList.add("active-popup");
   });
   
   iconClose.addEventListener("click", ()=>{
-    //console.log("hello");
+    console.log("clicked");
     popupSwitchWrapper.classList.remove("active-popup");
   });
 
   btPopupColour.addEventListener("click", ()=>{
+    console.log("clicked");
     popupColourWrapper.classList.add("active-popup");
   });
   
   iconClose2.addEventListener("click", ()=>{
-    //console.log("hello");
+    console.log("clicked");
     popupColourWrapper.classList.remove("active-popup");
   });
 
   btPopupShare.addEventListener("click", ()=>{
+    console.log("clicked");
     popupShareWrapper.classList.add("active-popup");
   });
 
   iconClose3.addEventListener("click", ()=>{
-    //console.log("hello");
+    console.log("clicked");
     popupShareWrapper.classList.remove("active-popup");
   });
 // event listener for color wheel change
