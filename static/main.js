@@ -433,6 +433,28 @@ colorPickerBoard.on('color:change', (color) => {
     changeColorBoard(color.hexString);
 });
 
+document.getElementById("share-btn").addEventListener('click', async () => {
+  try {
+    const response = await fetch('JSON/data.JSON');
+    const data = await response.json();
+
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }
+
+
+    const result = await fetch('/submitJSON', options);
+    const text = await result.text();
+    console.log(text);
+  } catch (err) {
+    console.log(err);
+  }
+
+});
 //music button?
 /*const musicbutton = document.getElementById("musicbutton");
 musicbutton.addEventListener("click", function() {
