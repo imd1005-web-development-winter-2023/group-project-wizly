@@ -464,11 +464,11 @@ main h2 {
   top: 0;
   left: 0;
   /*background: rgba(0, 0, 0, 0.1);*/
-  transform: scale(0);
+  visibility: "hidden";
 }
 
 .popup-colourContainer.active-popup{
-    transform: scale(1);
+    visibility: "visible";
   }
 
    .popup-colourContainer .content{
