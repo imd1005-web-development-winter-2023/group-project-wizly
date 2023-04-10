@@ -1,49 +1,752 @@
-/*
-  CSS File
-*/
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
-/*
- VARIABLES
-*/
-:root {
-  /* Core colours */
-  /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
-  --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
-  --colour-aquaisland: #a8dadc;
-  --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
+/* defines the styling for the shadow overlay keys (when keys are pressed down) */
+.shadowKeys {
+  fill: black;
+  opacity: 50%;
+}
 
-  /* Header configuration */
-  --header-heading-colour: var(--colour-peppermint);
+/* defines the styling for when the keys are selected in edit mode */
+.selectedKeys {
+  stroke: orange;
+  stroke-width: 2px;
+  opacity: 70%;
+}
 
-  /* Body configuration */
-  --body-default-colour: var(--colour-peppermint);
-  --body-background-colour: var(--colour-cello);
+/* defines the styling for all keys when in edit mode */
+.editingModeKeys {
+  opacity: 50%;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+/* defines the styling for all keys when not in edit mode */
+.normalKeys {
+  opacity: 50%;
+  stroke-width: 1px;
+}
+
+/* edit dialog box */
+/* do not change - position: absolute | visibility: hidden */
+#edit {
+  visibility: hidden;
+  position: absolute;
+  /*top:0;*/
+  z-index: 1000;
+  /*right: 0;*/
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* container for the edit buttons within the edit dialog box */
+#editButtons {
+  display: flex;
 }
 
 /*
   PAGE / BODY
 */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
+
+.cursor {
+  cursor: url('images/cursor.png'), default;
 }
 
-main {
-  min-height: 100vh;
+/*Feel free to change body, container and .app, this is just a quick template of sorts :)*/
+body {
+  font-family: 'Press Start 2P', cursive;
+  color: var(--body-default-colour);
+  background-color: var(--body-background-colour);
+  outline:none;
+  background-color: #E6E6D4;
+  width: 100%;
+  background-size: cover;
+  min-height: 100vh;}
 
+.container {
+  max-width: 90%;
+  max-height: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .app{
+    /*background-color: #e63946;*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    /*min-height: 100vh;*/
+    width: 87%;
+    height: 87%;
+    padding: 20px 0px;
+    /*width: 100vw;*/
+    position: fixed;
+    gap: 60px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+    /*Left flex column for three popup buttons*/
+    .left{
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+    }
+    /*button styling for switch, colour, share, and music*/
+    .switch-button, .colour-button, .share-button {
+      font-size: 25px;
+      color: #FFBE00;
+      height: auto;
+      margin: 10px;
+      font-family: 'Press Start 2P', cursive;
+      background-color: #1C819E;
+      padding: 10px;
+
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      text-transform: uppercase;
+
+      cursor: url('images/cursor_link.png'), pointer;
+
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    .switch-button:active, .colour-button:active, .share-button:active .music-button:active {
+      top: 2px;
+    }
+    
+    .switch-button, .colour-button, .share-button, .music-button {
+      position: relative;
+      display: block;
+      margin: 10px;
+      text-transform: uppercase;
+      
+      font-size: 25px;
+    }
+    
+    .switch-button::before, .colour-button::before, .share-button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: -10px;
+      right: -10px;
+      background: #1C819E;
+      z-index: -1;
+    }
+    
+    .switch-button::after, .colour-button::after, .share-button::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: -6px;
+      right: -6px;
+      background: #1C819E;
+      z-index: -1;
+    }
+    
+    .switch-button , .colour-button, .share-button {
+      padding: 10px 10px;
+      position: relative;
+      background: #1C819E;
+      width: auto;
+      z-index: 2;
+    }
+
+    .leftwithtext {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .lefttext {
+      color:#1C819E;
+      font-size: small;
+    }
+    
+    /*Middle flex column displaying monitor and keyboard*/
+    .middle{
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      height: 100%;
+    }
+
+    #textbox {
+      overflow: scroll;
+    }
+
+    .textbox {
+      position: absolute;
+      width: 70%;
+      height: 45%;
+      left: 15%;
+      top: 15%;
+      color:#E6E6D4;
+      font-family: 'Press Start 2P', cursive;
+      overflow: scroll;
+    }
+
+    .screen-output {
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+
+    .clear-button {
+      position: absolute;
+      top: 60%;
+      left: 5%;
+      background-color: transparent;
+      border-color: transparent;
+      cursor: url('images/cursor_link.png'), pointer;
+    }
+
+    .monitor {
+      max-height: 50vh;
+      width: auto;
+    }
+
+    .keyboard {
+      position:relative;
+      z-index: 999999;
+      top: 0;
+      left: 0;
+    }
+
+    .keyboard-color {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .music {
+      display: flex;
+      align-content: flex-end;
+    }
+
+    /*Right flex with music button, and mouse*/
+    .right {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      
+      /*align-items: flex-end;*/
+    }
+    .rightbuttons{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .music-button {
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    .musicbutton {      
+      max-height: 40px;
+      width: auto;
+      /*justify-content: flex-end;*/
+      cursor: url('images/cursor_link.png'), pointer;
+    }
+    
+    .svgcolors {
+      width: 100%;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    /* slider */
+    .slider {
+      position: absolute;
+      cursor: url('images/cursor_link.png'), pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #1C819E;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: #FFBE00;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #1C819E;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #1C819E;  
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    .mode {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .paintbutton {
+      max-height: 40px;
+      width: auto;
+    }
+
+    .textbutton {
+      max-height: 40px;
+      width: auto;
+    }
+
+    .mouse {
+      height: 40%;
+      width: auto;
+    }
+    /*.mouse {
+      display: flex;
+      justify-self: end;
+      align-self: end;
+    }*/
+
+/*common layout for all three pop ups*/
+.content{
+  text-align: center;
+  width: 40vw;
+  height: 50vh;
+  margin: 20px 0px;
+  /*margin: 85px auto 0;*/
+  padding: 15px 75px;
+  border-radius: 20px;
+  background-color: #003049;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: scroll;    
+  z-index: 4000;
+}
+.content .ri-close-line{
+  position: absolute;
+  
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #4E6E81;
+  font-size: 2rem;
+  color: #E4DCCF;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: url('images/cursor_link.png'), pointer;
+  z-index: 1;
+}
+.ri-close-line:hover {
+  background-color: #a8dadc;
+  color: #003049;
+}
+main h2 {
+  margin-bottom: 2rem;
+  margin-top: 1.2rem;
+  font-size: 2vw;
+  font-family: 'Press Start 2P', cursive;
+  color: #FFBE00;                                      
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 1);
 }
 
+/*Pop up window CSS*/
+  .popup-switchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+  }
+  .popup-switchContainer.active-popup{
+    transform: scale(1);
+  }
+
+    /*.popup-switchContainer .content{
+      text-align: center;
+      width: 40vw;
+      height: 50vh;
+      margin: 20px 0px;
+      
+      padding: 15px 75px;
+      border-radius: 20px;
+      background-color: #003049;
+      position: relative;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      overflow: scroll;    
+    }*/
+    
+      .buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        /*cursor: pointer;*/
+      }
+      .switch-btn{
+        cursor: url('images/cursor_link.png'), pointer;
+      }
+      .switch-btn:hover{
+        background-color: #a8dadc;
+        color: #003049;
+      }
+      .switch-btn:focus{
+        background-color: #a8dadc;
+        color: #003049;
+      }
+
+
+.popup-colourContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /*background: rgba(0, 0, 0, 0.1);*/
+  transform: scale(0);
+}
+
+.popup-colourContainer.active-popup{
+  transform: scale(1);
+  }
+
+   .popup-colourContainer .content{
+      /*text-align: center;*/
+      width: 45vw;
+      /*height: 50vh;
+      margin: 20px 0px;
+      padding: 15px 75px;
+      border-radius: 20px;
+      background-color: #003049;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      overflow: scroll;    */
+    }
+    /*.popup-colourContainer .content .ri-close-line{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45px;
+      height: 45px;
+      background: #4E6E81;
+      font-size: 2rem;
+      color: #E4DCCF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 20px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .ri-close-line:hover {
+      background-color: #a8dadc;
+      color: #003049;
+    }
+      main h2 {
+        margin-bottom: 2rem;
+        margin-top: 1.2rem;
+        font-size: 2vw;
+        font-family: 'Press Start 2P', cursive;
+        color: #FFBE00;                                      
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 1);
+        
+      }*/
+
+      /*Colour picker css*/
+      .colour-Picker{
+        display: flex;
+        flex-direction: column;
+        /*background-color: #FFBE00;*/
+        width: 100%;
+        height: 50vh;
+        margin: 20px 0px;
+      /*margin: 85px auto 0;*/
+        /*padding: 15px 0px;*/
+        border-radius: 20px;
+        flex-wrap: wrap;
+      }
+      .colour-Picker > * {
+        width: 100%;
+      }
+      
+      @media screen and (min-width: 1400px) {
+        .colour-Picker {
+          flex-direction: row;
+          height: 50vh;
+        }
+      }
+      .colour-Picker p{
+        background-color: aliceblue;
+        padding-bottom: 1rem;
+      }
+      .keyPicker {
+
+        width: 60%;
+        height: 100%;
+        /*background-color: #a8dadc;*/
+        background: rgba(0, 0, 0, 0.3);
+      }
+      /*.pickerTransf{
+        transform: translate(0px, -0.0rem);
+      }*/
+      .boardPicker{
+        width: 40%;
+        height: 100%;
+        /*background-color: #E4DCCF;*/
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .picker{
+        padding: 1rem;
+      }
+      .editButtons {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 0.5vw;
+        margin: 8px 0px;
+        /*cursor: url('images/cursor_link.png'), pointer;*/
+      }
+      button {
+        cursor: url('images/cursor_link.png'), pointer;
+      }
+      .popup-colourContainer .keyboard {
+        display: flex;
+        align-items: flex-end;
+        margin-top: 90%;
+        position:relative;
+        z-index: 999999;
+      }
+      .keyboard {
+        position:relative;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+      }
+  
+      .keyboard-color {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+
+
+      /*Switch pop up*/
+      .popup-shareContainer {
+        display: flex;
+        align-items: center;
+        
+        justify-content: center;
+        min-height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        transform: scale(0);
+      }
+      
+        .popup-shareContainer.active-popup{
+          transform: scale(1);
+        }
+          .share-btn{
+            position: relative;
+            border: none;
+            background: #a8dadc;
+            color: #003049;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            padding-top: 2.5px;
+            padding-right: 3px;
+            cursor: url('images/cursor_link.png'), pointer;
+            z-index: 2;
+          }
+          .share-btn:hover{
+            background-color: #a8dadcd2;
+            color: #003049;}
+
+          .popup-shareContainer .share-options{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute;
+            margin-top: 4rem;
+            top: 40%;
+            left: 10%;
+            width: 80%;
+            height: auto;
+            transform-origin: top left;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background: rgba(15, 15, 15, 0.5);
+            color: #a8dadc;
+            padding: 20px;
+            transition: .5s;
+            transition-delay: .5s;
+            transform: scale(0);
+          }
+          .share-options.active{
+            transform: scale(1);
+            transition-delay: 0s;
+          }
+          .link-container{
+            opacity: 0;
+            transition: .5s;
+            transition-delay: 0s;
+            width: 90%;
+            position: relative;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            border-radius: 40px;
+            background-color: #fff;
+            overflow: hidden;
+            padding: 0 10px;
+            margin-bottom: 1rem;
+          }
+          .link{
+            width: 80%;
+            height: 100%;
+            line-height: 40px;
+            color: #000;
+            font-size: 0.75vw;
+          }
+          .copy-button{
+            position: absolute;
+            right: 0;
+            cursor: url('images/cursor_link.png'), pointer;
+            background: #000;
+            color: #fff;
+            border: none;
+            height: 100%;
+            width: 30%;
+            text-transform: capitalize;
+            font-size: 1vw;
+          }
+          .share-options.active .link-container{
+            opacity: 1;
+            transition: .5s;
+            transition-delay: .5s;
+          }
+          
+          /*.popup-shareContainer .content{
+            text-align: center;
+            width: 40vw;
+            height: 50vh;
+            margin: 20px 0px;
+            padding: 15px 75px;
+            border-radius: 20px;
+            background-color: #003049;
+            position: relative;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            overflow: scroll;    
+          }
+
+          .content .ri-close-line{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 45px;
+            height: 45px;
+            background: #4E6E81;
+            font-size: 2rem;
+            color: #E4DCCF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius: 20px;
+            cursor: pointer;
+            z-index: 1;
+          }
+          .ri-close-line:hover {
+            background-color: #a8dadc;
+            color: #003049;
+          }
+            main h2 {
+              margin-bottom: 2rem;
+              margin-top: 1.2rem;
+              font-size: 2vw;
+              font-family: 'Press Start 2P', cursive;
+              color: #FFBE00;                                      
+              text-transform: uppercase;
+              letter-spacing: 12px;
+              box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 1);
+            }*/
+            
 /*
-  Screen reader text utility class
+Screen reader text utility class
 */
 .sr-only {
-  position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -51,5 +754,21 @@ main {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  border-width: 0;
-}
+  border-width: 0;}
+
+  /* TEXT BOX */
+
+  /* MODE SELECT */
+  .hidden {
+    display: none;
+  }
+
+  /* PAINT BOX */
+  canvas {
+    margin: auto;
+    position: absolute;
+    width: 70%;
+    height: 45%;
+    left: 41%;
+    top: 14%;
+  }

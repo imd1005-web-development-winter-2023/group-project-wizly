@@ -1,0 +1,249 @@
+{
+    "Backquote": {
+        "color": "#bf9728"
+    },
+    
+    "Digit1":  {
+        "color": "#bf9728"
+    },
+
+    "Digit2":  {
+        "color": "#bf9728"
+    },
+
+    "Digit3":  {
+        "color": "#bf9728"
+    },
+
+    "Digit4": {
+        "color": "#bf9728"
+    },
+
+    "Digit5":  {
+        "color": "#bf9728"
+    },
+
+    "Digit6":  {
+        "color": "#bf9728"
+    },
+
+    "Digit7":  {
+        "color": "#bf9728"
+    },
+
+    "Digit8":  {
+        "color": "#bf9728"
+    },
+    
+    "Digit9":  {
+        "color": "#bf9728"
+    },
+
+    "Digit0":  {
+        "color": "#bf9728"
+    },
+
+    "Minus":  {
+        "color": "#bf9728"
+    },
+
+    "Equal":  {
+        "color": "#bf9728"
+    },
+
+    "Backspace":  {
+        "color": "#bf9728"
+    },
+
+    "Tab":  {
+        "color": "#bf9728"
+    },
+
+    "KeyQ":  {
+        "color": "#bf9728"
+    },
+
+    "KeyW":  {
+        "color": "#bf9728"
+    },
+
+    "KeyE":  {
+        "color": "#bf9728"
+    },
+
+    "KeyR":  {
+        "color": "#bf9728"
+    },
+
+    "KeyT":  {
+        "color": "#bf9728"
+    },
+
+    "KeyY":  {
+        "color": "#bf9728"
+    },
+
+    "KeyU":  {
+        "color": "#bf9728"
+    },
+
+    "KeyI":  {
+        "color": "#bf9728"
+    },
+
+    "KeyO":  {
+        "color": "#bf9728"
+    },
+
+    "KeyP": {
+        "color": "#bf9728"
+    },
+
+    "BracketLeft":  {
+        "color": "#bf9728"
+    },
+
+    "BracketRight":  {
+        "color": "#bf9728"
+    },
+
+    "Backslash":  {
+        "color": "#bf9728"
+    },
+
+    "CapsLock":  {
+        "color": "#bf9728"
+    },
+
+    "KeyA":  {
+        "color": "#bf9728"
+    },
+
+    "KeyS":  {
+        "color": "#bf9728"
+    },
+
+    "KeyD":  {
+        "color": "#bf9728"
+    },
+
+    "KeyF":  {
+        "color": "#bf9728"
+    },
+
+    "KeyG":  {
+        "color": "#bf9728"
+    },
+
+    "KeyH":  {
+        "color": "#bf9728"
+    },
+
+    "KeyJ":  {
+        "color": "#bf9728"
+    },
+
+    "KeyK":  {
+        "color": "#bf9728"
+    },
+
+    "KeyL":  {
+        "color": "#bf9728"
+    },
+
+    "Semicolon":  {
+        "color": "#bf9728"
+    },
+
+    "Quote":  {
+        "color": "#bf9728"
+    },
+
+    "Enter":  {
+        "color": "#bf9728"
+    },
+
+    "ShiftLeft":  {
+        "color": "#bf9728"
+    },
+
+    "KeyZ":  {
+        "color": "#bf9728"
+    },
+
+    "KeyX":  {
+        "color": "#bf9728"
+    },
+
+    "KeyC":  {
+        "color": "#bf9728"
+    },
+
+    "KeyV":  {
+        "color": "#bf9728"
+    },
+
+    "KeyB":  {
+        "color": "#bf9728"
+    },
+
+    "KeyN":  {
+        "color": "#bf9728"
+    },
+
+    "KeyM":  {
+        "color": "#bf9728"
+    },
+
+    "Comma":  {
+        "color": "#bf9728"
+    },
+
+    "Period":  {
+        "color": "#bf9728"
+    },
+
+    "Slash":  {
+        "color": "#bf9728"
+    },
+
+    "ShiftRight":  {
+        "color": "#bf9728"
+    },
+
+    "ControlLeft":  {
+        "color": "#bf9728"
+    },
+
+    "MetaLeft":  {
+        "color": "#bf9728"
+    },
+
+    "AltLeft":  {
+        "color": "#bf9728"
+    },
+
+    "Space":  {
+        "color": "#bf9728"
+    },
+
+    "AltRight":  {
+        "color": "#bf9728"
+    },
+
+    "MetaRight": {
+        "color": "#bf9728"
+    },
+
+    "ContextMenu":  {
+        "color": "#bf9728"
+    },
+
+    "ControlRight":  {
+        "color": "#bf9728"
+    },
+
+    "Board": {
+        "color": "#000"
+    }
+ }
