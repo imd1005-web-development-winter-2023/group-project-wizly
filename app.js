@@ -30,12 +30,17 @@ mongoose.connect('mongodb://localhost:27017/KeyboardDB', { useNewUrlParser: true
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+app.get('/data/:link', async (req, res) => {
+  console.log(req.params.link);
+  data = await getData(req.params.link);
+  console.log(data);
+  res.json(data);
 })
 
-
+app.get('/', async (req, res) => {
+    console.log(req.url);
+    res.sendFile(path.join(__dirname, 'views', 'index.html')); // SEND THE INDEX DOCUMENT
+})
 
 // PARSE INCOMING JSON
 app.use(express.json());

@@ -161,6 +161,7 @@ const iconClose3 = document.querySelector(".icon-close3");
 
 const shareBtn = document.querySelector(".share-btn");
 const shareOptions = document.querySelector(".share-options");
+const params = new URLSearchParams(window.location.search);
 
 // classes used
 let shadowClass = "shadowKeys";
@@ -196,7 +197,19 @@ async function __init() {
     svgBoard = await getSVG(figure, svgBoardFile);
     svg.setAttribute("class", normalKeyClass);
     codeList = await getJSON(listFile);
-    keyColorData = await getJSON(dataFile);
+
+    if (!params.get('share')) {
+      keyColorData = await getJSON(dataFile);
+    }
+
+    else {
+      const share = params.get('share');
+      keyColorData = await getJSON(`/data/${share}`);
+      if (keyColorData == null) {
+        console.log("RETURN IS EMPTY")
+        keyColorData = await getJSON(dataFile);
+      }
+    }
     resetColor();
 }
 
