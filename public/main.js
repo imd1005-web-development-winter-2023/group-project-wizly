@@ -402,6 +402,11 @@ function changeImage() {
     }
 }
 
+function copyText(elemName) {
+  elem = document.getElementById(elemName);
+  navigator.clipboard.writeText(elem.innerHTML);
+}
+
   btPopupSwitch.addEventListener("click", ()=>{
     console.log(popupSwitchWrapper);
     popupSwitchWrapper.classList.add("active-popup");
@@ -451,8 +456,7 @@ colorPickerBoard.on('color:change', (color) => {
 
 document.getElementById("share-btn").addEventListener('click', async () => {
   try {
-    const response = await fetch('./public/JSON/data.JSON');
-    const data = await response.json();
+    const data = keyColorData;
 
     const options = {
       method: 'POST',
@@ -462,10 +466,11 @@ document.getElementById("share-btn").addEventListener('click', async () => {
       body: JSON.stringify(data)
     }
 
-
     const result = await fetch('/submitJSON', options);
-    const text = await result.text();
-    console.log(text);
+    const resultData = await result.json();
+    elem = document.getElementById("link-txt");
+    elem.innerHTML = resultData.link;
+
   } catch (err) {
     console.log(err);
   }

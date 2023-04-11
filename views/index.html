@@ -167,7 +167,9 @@
         </div>
         <div class="popup-shareContainer" id="popup-shareContainer">
           <div class="content">
-            <span class="icon-close3" id="icon-close3"></span>
+            <span class="icon-close3" id = "icon-close3">
+              <i class="ri-close-line"></i>
+            </span>
             <h2>Share</h2>
             <div class="wrapper">
               <button class="share-btn" id="share-btn">
@@ -175,9 +177,8 @@
               </button>
               <div class="share-options">
                 <div class="link-container">
-                  <p class="link">https</p>
-                  <button class="copy-button">copy</button>
-
+                  <p class="link" id="link-txt"></p>
+                  <button class="copy-button" onclick = "copyText('link-txt')"">copy</button>
                 </div>
               </div>
 

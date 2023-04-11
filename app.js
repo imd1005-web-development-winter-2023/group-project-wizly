@@ -8,18 +8,6 @@ const fs = require('fs');
 const PORT = 3000;
 const app = express();
 
-const options = {
-  dotfiles: 'ignore',
-  etag: false,
-  extensions: ['htm', 'html'],
-  index: "index.html",
-  maxAge: '1d',
-  redirect: false,
-  setHeaders: function (res, path, stat) {
-    res.set('x-timestamp', Date.now())
-  }
-}
-
 // CONNECT TO DATABASE
 mongoose.connect('mongodb://localhost:27017/KeyboardDB', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
@@ -29,6 +17,7 @@ mongoose.connect('mongodb://localhost:27017/KeyboardDB', { useNewUrlParser: true
 // SEND STATIC FILES TO 
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
+
 
 app.get('/data/:link', async (req, res) => {
   console.log(req.params.link);

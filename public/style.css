@@ -663,7 +663,7 @@ main h2 {
             opacity: 0;
             transition: .5s;
             transition-delay: 0s;
-            width: 90%;
+            width: 95%;
             position: relative;
             height: 40px;
             display: flex;
@@ -675,12 +675,15 @@ main h2 {
             margin-bottom: 1rem;
           }
           .link{
-            width: 80%;
+            align-self: flex-start;
+            margin-left: 0.5vw;
+            width: 90%;
             height: 100%;
             line-height: 40px;
             color: #000;
             font-size: 0.75vw;
           }
+
           .copy-button{
             position: absolute;
             right: 0;
@@ -689,7 +692,7 @@ main h2 {
             color: #fff;
             border: none;
             height: 100%;
-            width: 30%;
+            width: 20%;
             text-transform: capitalize;
             font-size: 1vw;
           }
