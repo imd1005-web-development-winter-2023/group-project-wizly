@@ -9,5 +9,5 @@ const Schema = new mongoose.Schema({
 // DEFINE THE MODEL AND COLLECTION NAME
 const model = mongoose.model('KeyboardJSON', Schema);
 
-// EXPOR THE MODEL
+// EXPORT THE MODEL
 module.exports = model;
